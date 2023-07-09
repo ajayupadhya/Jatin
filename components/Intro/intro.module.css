@@ -1,0 +1,50 @@
+.IntroContainer {
+  display: flex;
+  width: 90%;
+  background-color: transparent;
+  align-items: flex-start;
+  margin: auto;
+  gap: calc(var(--normal-font-size) * 5);
+  padding: calc(var(--normal-font-size) * 7) 0px;
+}
+
+.IntroContainerHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.IntroContainerHeader > a,
+.IntroContainerHeader > p {
+  color: var(--font-color-theme-dark);
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.IntroContainerHeader > p {
+  color: var(--font-color-theme-dark);
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.IntroContainerImage {
+  width: 50%;
+  aspect-ratio: 581/727;
+}
+
+.IntroContainerText {
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: column;
+}
+.IntroContainerAbout {
+}

@@ -1,0 +1,61 @@
+.clientContainer {
+  display: flex;
+  width: 90%;
+  background-color: transparent;
+  align-items: flex-start;
+  margin: auto;
+  flex-direction: column;
+  gap: calc(var(--normal-font-size) * 12);
+  margin: auto;
+  padding: calc(var(--normal-font-size) * 7) 0px;
+}
+
+.singleClient {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: calc(var(--normal-font-size) * 6);
+}
+
+.singleClientText {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+  flex-direction: column;
+}
+
+.singleClientText>div {
+  color: var(--font-color-theme-dark);
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.singleClientText>h4 {
+  margin-bottom: 20px;
+  color: var(--font-color-theme-dark);
+  font-size: var(--big-font-size);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.singleClientTextContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.singleClientImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  max-width: 569px;
+  width: fit-content;
+}
