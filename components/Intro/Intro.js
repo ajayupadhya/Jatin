@@ -12,7 +12,7 @@ const Intro = () => {
       </div>
       <div className={styles.IntroContainerText}>
         <div className={styles.IntroContainerHeader}>
-          <Link href={"/"}> /* ABOUT</Link>
+          <Link href={"/"}> {"/*"} ABOUT</Link>
 
           <p className={styles.IntroContainerAbout}>
             I am a New Delhi based self-taught designer with over 7+ years of

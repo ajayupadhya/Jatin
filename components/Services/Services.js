@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <div className={styles.serviceContainer}>
       <div className={styles.serviceContainerHeader}>
-        <Link href={"/"}> /* SERVICES</Link>
+        <Link href={"/"}>   {"/*"} SERVICES</Link>
       </div>
 
       <div className={styles.serviceContainerData}>

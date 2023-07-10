@@ -57,7 +57,7 @@ const Clients = () => {
             </div>
             <div className={style.singleClientText}>
               <div>
-                /* WORK 0{index + 1} / 0{data.length}
+                {"/*"} WORK 0{index + 1} / 0{data.length}
               </div>
               <h4 className={playFair_display.className}>{item.title}</h4>
               <div className={style.singleClientTextContainer}>
