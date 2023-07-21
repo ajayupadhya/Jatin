@@ -9,7 +9,7 @@ const RotateOnScroll = () => {
     const text = circleInstance.current;
     new CircleType(circleInstance.current).radius(75);
     window.addEventListener("scroll", function () {
-      text.style.transform = `rotate(${window.scrollY * 0.15}deg)`;
+      text.style.transform = `rotate(${window.scrollY * 0.35}deg)`;
     });
   }, []);
 
