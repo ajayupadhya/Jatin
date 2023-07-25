@@ -27,7 +27,7 @@ const LoadScreen = ({ loaderChange }) => {
 
   return (
     <>
-      {/* <div
+      <div
         className={`${styles.loaderScreen} ${
           count === 100 && styles.animate_loader
         }`}
@@ -56,10 +56,10 @@ const LoadScreen = ({ loaderChange }) => {
             {count} <span className={playFair_display.className}> &#37;</span>
           </p>
         </div>
-      </div> */}
+      </div>
       <div className={styles.mainBannerContainer}>
         <div className={styles.mainBannerTextContainer}>
-          <p className={styles.mainBannerTextUpper}>
+          <div className={styles.mainBannerTextUpper}>
             <span>D</span>
             <span>I</span>
             <span>G</span>
@@ -67,9 +67,9 @@ const LoadScreen = ({ loaderChange }) => {
             <span>T</span>
             <span>A</span>
             <span>L</span>
-            <Image src={LoaderImage} alt="India gate"/>
-          </p>
-          <p className={styles.mainBannerTextLower}>
+            <span>K</span>
+           </div>
+          <div className={styles.mainBannerTextLower}>
             <span>D</span>
             <span>E</span>
             <span>S</span>
@@ -78,7 +78,7 @@ const LoadScreen = ({ loaderChange }) => {
             <span>N</span>
             <span>E</span>
             <span>R</span>
-          </p>
+          </div>
         </div>
       </div>
     </>
