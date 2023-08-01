@@ -24,22 +24,22 @@
   animation-fill-mode: forwards;
 }
 
-.LoaderImageContainer>img {
+.LoaderImageContainer > img {
   background: var(--red-color);
 }
 
-.loaderScreen>progress {
+.loaderScreen > progress {
   position: absolute;
   top: 0;
   width: 100%;
   height: 4px;
 }
 
-.loaderScreen>progress::-webkit-progress-bar {
+.loaderScreen > progress::-webkit-progress-bar {
   background-color: var(--font-color-theme-light);
 }
 
-.loaderScreen>progress::-webkit-progress-value {
+.loaderScreen > progress::-webkit-progress-value {
   background-color: var(--red-color);
 }
 
@@ -52,7 +52,7 @@
   gap: 61px;
 }
 
-.LoaderCounterContainer>p {
+.LoaderCounterContainer > p {
   color: var(--font-color-theme-dark);
   font-size: var(--big-font-size);
   font-style: italic;
@@ -91,7 +91,7 @@
   justify-content: center;
   width: 100%;
   flex-direction: column;
-  gap: calc(var(--big-font-size)*2);
+  gap: calc(var(--big-font-size) * 2);
 }
 
 .mainBannerTextUpper,
@@ -106,106 +106,86 @@
   position: relative;
   text-transform: uppercase;
   line-height: 54px;
-
 }
 
-
-
-.mainBannerTextUpper>img {
+.mainBannerTextUpper > img {
   width: 100%;
-  height: calc(var(--big-font-size)*2);
+  height: calc(var(--big-font-size) * 2);
   object-fit: fill;
 }
 
-
-.mainBannerTextUpper>span {
+.mainBannerTextUpper > span {
   position: relative;
   bottom: -80px;
   opacity: 0;
   animation-name: slide-in;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-delay: 5.5s;
   animation-timing-function: cubic-bezier(0.1, 0.46, 0.52, 1.04);
   animation-fill-mode: forwards;
   height: var(--big-font-size);
 }
 
-
-.mainBannerTextLower>span {
+.mainBannerTextLower > span {
   position: relative;
   bottom: -80px;
   opacity: 0;
   animation-name: slide-in;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-delay: 5.8s;
   animation-timing-function: cubic-bezier(0.1, 0.46, 0.52, 1.04);
   animation-fill-mode: forwards;
 }
 
-
-.mainBannerTextUpper>span:nth-of-type(2) {
-
+.mainBannerTextUpper > span:nth-of-type(2) {
   animation-delay: 5.6s;
 }
 
-.mainBannerTextUpper>span:nth-of-type(3) {
-
+.mainBannerTextUpper > span:nth-of-type(3) {
   animation-delay: 5.7s;
 }
 
-.mainBannerTextUpper>span:nth-of-type(4) {
-
+.mainBannerTextUpper > span:nth-of-type(4) {
   animation-delay: 5.8s;
 }
 
-.mainBannerTextUpper>span:nth-of-type(5) {
-
+.mainBannerTextUpper > span:nth-of-type(5) {
   animation-delay: 5.9s;
 }
 
-.mainBannerTextUpper>span:nth-of-type(6) {
-
+.mainBannerTextUpper > span:nth-of-type(6) {
   animation-delay: 6s;
 }
 
-.mainBannerTextUpper>span:nth-of-type(7) {
-
+.mainBannerTextUpper > span:nth-of-type(7) {
   animation-delay: 6.1s;
 }
 
-
-.mainBannerTextLower>span:nth-of-type(2) {
-
+.mainBannerTextLower > span:nth-of-type(2) {
   animation-delay: 5.9s;
 }
 
-.mainBannerTextLower>span:nth-of-type(3) {
-
+.mainBannerTextLower > span:nth-of-type(3) {
   animation-delay: 6s;
 }
 
-.mainBannerTextLower>span:nth-of-type(4) {
-
+.mainBannerTextLower > span:nth-of-type(4) {
   animation-delay: 6.1s;
 }
 
-.mainBannerTextLower>span:nth-of-type(5) {
-
+.mainBannerTextLower > span:nth-of-type(5) {
   animation-delay: 6.2s;
 }
 
-.mainBannerTextLower>span:nth-of-type(6) {
-
+.mainBannerTextLower > span:nth-of-type(6) {
   animation-delay: 6.3s;
 }
 
-.mainBannerTextLower>span:nth-of-type(7) {
-
+.mainBannerTextLower > span:nth-of-type(7) {
   animation-delay: 6.4s;
 }
 
-.mainBannerTextLower>span:nth-of-type(8) {
-
+.mainBannerTextLower > span:nth-of-type(8) {
   animation-delay: 6.5s;
 }
 
@@ -218,5 +198,11 @@
   100% {
     bottom: 0px;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .LoaderCounterContainer {
+    gap: 22px;
   }
 }

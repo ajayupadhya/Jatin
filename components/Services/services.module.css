@@ -6,6 +6,7 @@
     flex-direction: column;
     position: relative;
     padding: calc(var(--normal-font-size) * 7) 0px;
+    overflow: hidden;
 }
 
 

@@ -27,7 +27,7 @@ const LoadScreen = ({ loaderChange }) => {
 
   return (
     <>
-      <div
+      {/* <div
         className={`${styles.loaderScreen} ${
           count === 100 && styles.animate_loader
         }`}
@@ -56,7 +56,7 @@ const LoadScreen = ({ loaderChange }) => {
             {count} <span className={playFair_display.className}> &#37;</span>
           </p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.mainBannerContainer}>
         <div className={styles.mainBannerTextContainer}>
           <div className={styles.mainBannerTextUpper}>
