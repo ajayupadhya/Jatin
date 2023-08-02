@@ -1,41 +1,156 @@
-.header_container {
-  background-color: #000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1440px;
-  margin: auto;
-  z-index: 10;
+@media screen and (min-width: 600px) {
+  .header_container_mobile {
+    display: none;
+  }
+  .header_container {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .header_container_left > a > p {
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .header_container_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_container_right > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(var(--big-font-size));
+    text-decoration: none;
+  }
+
+  .header_container_right > ul > li > a {
+    text-transform: uppercase;
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
 
-.header_container_left > a > p {
-  font-size: var(--normal-font-size);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.header_container_right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@media screen and (max-width: 600px) {
+  .header_container {
+    display: none;
+  }
+  .header_container_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 20px;
+    margin: auto;
+    justify-self: flex-start;
+  }
+  /* .header_container_left_mobile > a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  } */
+  .header_container_left_mobile > a > p {
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 16px;
+  }
+  .header_container_right_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+  }
+  .hamburger_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45px;
+    height: 12px;
+  }
 
-.header_container_right > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: calc(var(--big-font-size));
-  text-decoration: none;
-}
+  .hamburger_one {
+    width: 28px;
+    height: 3px;
+    background-color: var(--font-color-theme-dark);
+    border-radius: 10px;
+  }
+  .hamburger_two {
+    width: 28px;
+    height: 3px;
+    background-color: var(--font-color-theme-dark);
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+  }
+  .drawerOpen_mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #000;
+    background-image: url(../../Images/backgroundImage.svg);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-.header_container_right > ul > li > a {
-  text-transform: uppercase;
-  font-size: var(--normal-font-size);
-  font-weight: 600;
-  cursor: pointer;
+  .drawerOpen_mobile_text_container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    gap: 17px;
+  }
+
+  .drawerOpen_mobile_text_container > li > a {
+    color: rgba(240, 240, 240, 0.3);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px; /* 96.429% */
+    text-transform: capitalize;
+  }
+
+  .drawerOpen_mobile_text_container > li > a:hover {
+    text-decoration-line: line-through;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .drawerOpenFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-end;
+    width: 100%;
+    padding: 63px 20px;
+  }
 }

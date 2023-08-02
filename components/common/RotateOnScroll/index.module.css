@@ -1,23 +1,22 @@
-
-.container{
- display: flex;
- align-self: flex-end;
- position: relative;
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
 }
 
-.circular_text{
+.circular_text {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.circle{
+.circle {
   width: 10px;
   height: 10px;
   background-color: #fff;
   position: absolute;
   left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
