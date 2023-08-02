@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="app_container">
       <Banner />
-      {/* <Intro/> */}
+      <Intro/>
       <Services/>
       <Clients />
       <LetsTalk />
