@@ -119,14 +119,6 @@
 
 
 
-
-@media screen and (max-width: 600px) {
-  .LoaderCounterContainer {
-    gap: 22px;
-  }
-}
-
-
 .text {
   font-size: var(--banner-font-size);
   font-style: normal;
@@ -139,13 +131,60 @@
 
 }
 
+
+
+
+@media screen and (max-width: 600px) {
+  .LoaderCounterContainer {
+    gap: 22px;
+  }
+
+  .mainBannerContainer {
+    width: 90%;
+    overflow: hidden;
+    height: 91vh;
+  }
+
+  .mainBannerTextContainer {
+    gap: 1px;
+  }
+
+  .mainBannerTextUpper>img {
+    width: 100%;
+    height: 100%;
+    animation: text-slide .8s cubic-bezier(0.42, 0, 0, 1.29) forwards;
+  }
+
+  .mainBannerTextUpper,
+  .mainBannerTextLower {
+    height: 60px;
+
+  }
+
+  .text {
+    font-size: var(--banner-font-size);
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    animation: text-slide .8s 5.5s cubic-bezier(0.42, 0, 0, 1.29) forwards;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+
+
 @keyframes text-slide {
   0% {
     transform: translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 3deg);
+    opacity: 0;
   }
 
 
   100% {
     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
   }
 }

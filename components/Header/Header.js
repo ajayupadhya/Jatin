@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 import Link from "next/link";
 import { playFair_display } from "@/app/fonts";
 const Header = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(true);
   return (
     <>
       <nav className={styles.header_container}>

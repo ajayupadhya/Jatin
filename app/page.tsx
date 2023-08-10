@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <div className="app_container">
       <Banner />
-      <Intro/>
-      <Services/>
-      <Clients />
-      <LetsTalk />
+      {/* <Intro/> */}
+      {/* <Services/> */}
+      {/* <Clients /> */}
+      {/* <LetsTalk /> */}
     </div>
   );
 }

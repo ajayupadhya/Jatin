@@ -141,54 +141,6 @@ table {
   padding: 0px 80px;
 }
 
-@media screen and (max-width: 1600px) and (min-width: 1248px) {
-  :root {
-    --normal-font-size: 14px;
-    --big-font-size: 80px;
-    --medium-font-size: 20px;
-    --banner-font-size: 200px;
-  }
-  .app_container {
-    padding: 0px 80px;
-  }
-}
-
-@media screen and (max-width: 1248px) and (min-width: 900px) {
-  :root {
-    --normal-font-size: 14px;
-    --big-font-size: 72px;
-    --medium-font-size: 20px;
-    --banner-font-size: 170px;
-  }
-  .app_container {
-    padding: 0px 80px;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  :root {
-    --normal-font-size: 14px;
-    --big-font-size: 64px;
-    --medium-font-size: 20px;
-    --banner-font-size: 140px;
-  }
-  .app_container {
-    padding: 0px 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  :root {
-    --normal-font-size: 12px;
-    --big-font-size: 56px;
-    --medium-font-size: 14px;
-    --banner-font-size: 100px;
-  }
-  .app_container {
-    padding: 0px 20px;
-  }
-}
-
 body {
   background-color: #000;
   background-image: url(../Images//backgroundImage.svg);
@@ -210,3 +162,69 @@ body {
   margin-top: 44px;
   width: 100%;
 }
+
+@media screen and (max-width: 1600px) and (min-width: 1248px) {
+  :root {
+    --normal-font-size: 14px;
+    --big-font-size: 80px;
+    --medium-font-size: 20px;
+    --banner-font-size: 200px;
+  }
+  .app_container {
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 1248px) and (min-width: 900px) {
+  :root {
+    --normal-font-size: 14px;
+    --big-font-size: 72px;
+    --medium-font-size: 20px;
+    --banner-font-size: 170px;
+  }
+  .app_container {
+    padding: 0px 80px;
+   
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  :root {
+    --normal-font-size: 14px;
+    --big-font-size: 64px;
+    --medium-font-size: 20px;
+    --banner-font-size: 140px;
+  }
+  .app_container {
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width:400px) {
+  :root {
+    --normal-font-size: 12px;
+    --big-font-size: 56px;
+    --medium-font-size: 14px;
+    --banner-font-size: 64px;
+  }
+  .app_container {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  :root {
+    --normal-font-size: 12px;
+    --big-font-size: 56px;
+    --medium-font-size: 14px;
+    --banner-font-size: 60px;
+  }
+  .app_container {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+}
+
+

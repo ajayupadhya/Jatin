@@ -60,11 +60,11 @@ const LoadScreen = ({ loaderChange }) => {
       <div className={styles.mainBannerContainer}>
         <div className={styles.mainBannerTextContainer}>
           <div className={styles.mainBannerTextUpper}>
-            <p className={styles.text}>DIGITAL</p>
+            <p className={`${styles.text} ${playFair_display.className}`}>DIGITAL</p>
             <Image src={LoaderImage} alt="india gate" />
           </div>
           <div className={styles.mainBannerTextLower}>
-            <p className={styles.text}>DESIGNER</p>
+            <p className={`${styles.text} ${playFair_display.className}`}>DESIGNER</p>
           </div>
         </div>
       </div>
