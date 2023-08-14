@@ -71,7 +71,7 @@ const Services = () => {
           <p className={playFair_display.className}>Brand Identity</p>
         </div>
       </div>
-      {/* <RotateOnScroll /> */}
+      <RotateOnScroll />
     </div>
   );
 };

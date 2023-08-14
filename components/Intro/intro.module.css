@@ -48,3 +48,19 @@
 }
 .IntroContainerAbout {
 }
+
+
+
+
+@media screen and (max-width:600px) {
+  .IntroContainer{
+    flex-direction: column;
+  }
+  .IntroContainerImage{
+    width: 100%;
+  }
+  .IntroContainerText{
+    width: 100%;
+    align-items: normal;
+  }
+}

@@ -44,3 +44,10 @@
     background-color: var(--red-color);
 }
 
+
+
+@media screen and (max-width:600px) {
+  .link_button{
+    width: 100%;
+  }
+}
