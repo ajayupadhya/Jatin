@@ -1,7 +1,9 @@
 .container {
   display: flex;
   position: relative;
-  align-items: flex-end;
+  align-items:center;
+  width: 74px;
+  align-self: flex-end;
 }
 
 .circular_text {
@@ -14,9 +16,8 @@
   width: 10px;
   height: 10px;
   background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: -5%;
 }

@@ -7,7 +7,7 @@ const RotateOnScroll = () => {
 
   useEffect(() => {
     const text = circleInstance.current;
-    new CircleType(circleInstance.current).radius(75);
+    new CircleType(circleInstance.current).radius(73);
     window.addEventListener("scroll", function () {
       text.style.transform = `rotate(${window.scrollY * 0.35}deg)`;
     });
