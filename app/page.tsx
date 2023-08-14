@@ -1,4 +1,4 @@
-import { Banner, Clients, Intro, LetsTalk, Services } from "../components";
+import { Banner, Clients, Intro, LetsTalk, Services  , Marque} from "../components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Intro/>
       <Services/>
       <Clients />
+      <Marque/>
       <LetsTalk />
     </div>
   );
