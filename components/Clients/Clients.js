@@ -3,7 +3,7 @@ import React from "react";
 import ProductImage from "../../Images/product.jpg";
 import Button from "../common/Button/smallButton";
 import style from "./clients.module.css";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const Clients = () => {
   const data = [
     {
@@ -60,7 +60,7 @@ const Clients = () => {
                 <div>
                   {"/*"} WORK 0{index + 1} / 0{data.length}
                 </div>
-                <h4 className={playFair_display.className}>{item.title}</h4>
+                <h4 className={raleway_display.className}>{item.title}</h4>
                 <div className={style.singleClientTextContainer}>
                   <p>* CLIENT : {item.client}</p>
                   <p>* TIMELINE : {item.timeline}</p>
@@ -83,7 +83,7 @@ const Clients = () => {
             return (
               <div key={index} className={style.singleClientMobile}>
                 <div className={style.singleClientTextMobile}>
-                  <h4 className={playFair_display.classNameMobile}>
+                  <h4 className={raleway_display.classNameMobile}>
                     {item.title}
                   </h4>
                 </div>

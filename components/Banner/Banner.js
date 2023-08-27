@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./banner.module.css";
 import Image from "next/image";
 import LoaderImage from "../../Images/indiaGate.svg";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const LoadScreen = ({ loaderChange }) => {
   const [count, setCount] = useState(0);
 
@@ -53,18 +53,18 @@ const LoadScreen = ({ loaderChange }) => {
           </div>
 
           <p>
-            {count} <span className={playFair_display.className}> &#37;</span>
+            {count} <span className={raleway_display.className}> &#37;</span>
           </p>
         </div>
       </div>
       <div className={styles.mainBannerContainer}>
         <div className={styles.mainBannerTextContainer}>
           <div className={styles.mainBannerTextUpper}>
-            <p className={`${styles.text} ${playFair_display.className}`}>DIGITAL</p>
+            <p className={`${styles.text} ${raleway_display.className}`}>DIGITAL</p>
             <Image src={LoaderImage} alt="india gate" />
           </div>
           <div className={styles.mainBannerTextLower}>
-            <p className={`${styles.text} ${playFair_display.className}`}>DESIGNER</p>
+            <p className={`${styles.text} ${raleway_display.className}`}>DESIGNER</p>
           </div>
         </div>
       </div>

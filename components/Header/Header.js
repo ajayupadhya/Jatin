@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
   return (
@@ -69,16 +69,16 @@ const Header = () => {
 
               <ul className={styles.drawerOpen_mobile_text_container}>
                 <li>
-                  <Link href="/" className={playFair_display.className}>Home</Link>
+                  <Link href="/" className={raleway_display.className}>Home</Link>
                 </li>
                 <li>
-                  <Link href="/"  className={playFair_display.className}>About</Link>
+                  <Link href="/"  className={raleway_display.className}>About</Link>
                 </li>
                 <li>
-                  <Link href="/"  className={playFair_display.className}>Works</Link>
+                  <Link href="/"  className={raleway_display.className}>Works</Link>
                 </li>
                 <li>
-                  <Link href="/"  className={playFair_display.className}>Contact</Link>
+                  <Link href="/"  className={raleway_display.className}>Contact</Link>
                 </li>
               </ul>
               <div className={styles.drawerOpenFooter}>

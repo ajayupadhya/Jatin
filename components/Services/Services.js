@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import RotateOnScroll from "../common/RotateOnScroll";
 import styles from "./services.module.css";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const Services = () => {
   const serviceData = [
     {
@@ -45,8 +45,8 @@ const Services = () => {
 
       <div className={styles.serviceContainerData}>
         <div>
-          <p className={playFair_display.className}>Product Design</p>
-          <p className={playFair_display.className}>Web Design</p>
+          <p className={raleway_display.className}>Product Design</p>
+          <p className={raleway_display.className}>Web Design</p>
         </div>
         <div>
           <svg
@@ -63,12 +63,12 @@ const Services = () => {
             />
           </svg>
 
-          <p className={playFair_display.className}>Mobile Design</p>
-          <p className={playFair_display.className}>UX Strategy</p>
+          <p className={raleway_display.className}>Mobile Design</p>
+          <p className={raleway_display.className}>UX Strategy</p>
         </div>
         <div>
-          <p className={playFair_display.className}>Visual Design</p>
-          <p className={playFair_display.className}>Brand Identity</p>
+          <p className={raleway_display.className}>Visual Design</p>
+          <p className={raleway_display.className}>Brand Identity</p>
         </div>
       </div>
       <RotateOnScroll />

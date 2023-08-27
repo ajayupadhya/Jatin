@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAsterisk } from "react-icons/fa";
 import styles from "./index.module.css";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 
 function MarqueeSection() {
   return (
@@ -9,7 +9,7 @@ function MarqueeSection() {
       <div className={styles.marquee_section_container_desktop}>
         <div className={styles.line1}>
           <div className={styles.marquee_text_wrapper_1}>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -17,7 +17,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               75 STOCKS{" "}
               <FaAsterisk
                 size={22}
@@ -25,7 +25,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ART PARKK
               <FaAsterisk
                 size={22}
@@ -33,7 +33,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -41,7 +41,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CANDES
               <FaAsterisk
                 size={22}
@@ -49,7 +49,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               NATIONAL POKER SERIES
               <FaAsterisk
                 size={22}
@@ -58,7 +58,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -66,7 +66,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ARG TRADING
               <FaAsterisk
                 size={22}
@@ -74,7 +74,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TRAVASKO
               <FaAsterisk
                 size={22}
@@ -83,7 +83,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CITIZEN GEORGIA
               <FaAsterisk
                 size={22}
@@ -93,7 +93,7 @@ function MarqueeSection() {
             </p>
           </div>
           <div className={styles.marquee_text_wrapper_1}>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               MERCHANT BAY
               <FaAsterisk
                 size={22}
@@ -101,7 +101,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TRAVASKO
               <FaAsterisk
                 size={22}
@@ -110,7 +110,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               NATIONAL POKER SERIES
               <FaAsterisk
                 size={22}
@@ -118,7 +118,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CRYSTA IVF
               <FaAsterisk
                 size={22}
@@ -126,7 +126,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -134,7 +134,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ARG TRADING
               <FaAsterisk
                 size={22}
@@ -142,7 +142,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -150,7 +150,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               75 STOCKS{" "}
               <FaAsterisk
                 size={22}
@@ -158,7 +158,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ART PARKK
               <FaAsterisk
                 size={22}
@@ -166,7 +166,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -179,7 +179,7 @@ function MarqueeSection() {
 
         <div className={styles.line2}>
           <div className={styles.marquee_text_wrapper_2}>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -187,7 +187,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               75 STOCKS{" "}
               <FaAsterisk
                 size={22}
@@ -195,7 +195,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ART PARKK
               <FaAsterisk
                 size={22}
@@ -203,7 +203,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CITIZEN GEORGIA
               <FaAsterisk
                 size={22}
@@ -212,7 +212,7 @@ function MarqueeSection() {
               />
             </p>
             
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CYBER PAL
               <FaAsterisk
                 size={22}
@@ -220,7 +220,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DECORAS USA
               <FaAsterisk
                 size={22}
@@ -228,7 +228,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DEYOR CAMPS
               <FaAsterisk
                 size={22}
@@ -236,7 +236,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -245,7 +245,7 @@ function MarqueeSection() {
               />
             </p>
            
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DEYOR CAMPS
               <FaAsterisk
                 size={22}
@@ -254,7 +254,7 @@ function MarqueeSection() {
               />
             </p>
             
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -264,7 +264,7 @@ function MarqueeSection() {
             </p>
           </div>
           <div className={styles.marquee_text_wrapper_2}>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               MERCHANT BAY
               <FaAsterisk
                 size={22}
@@ -272,7 +272,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -280,7 +280,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               NATIONAL POKER SERIES
               <FaAsterisk
                 size={22}
@@ -288,7 +288,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DECORAS USA
               <FaAsterisk
                 size={22}
@@ -296,7 +296,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DEYOR CAMPS
               <FaAsterisk
                 size={22}
@@ -304,7 +304,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -312,7 +312,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DECORAS USA
               <FaAsterisk
                 size={22}
@@ -320,7 +320,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               DEYOR CAMPS
               <FaAsterisk
                 size={22}
@@ -328,7 +328,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -336,7 +336,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CRYSTA IVF
               <FaAsterisk
                 size={22}
@@ -344,7 +344,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -358,7 +358,7 @@ function MarqueeSection() {
 
         <div className={styles.line3}>
           <div className={styles.marquee_text_wrapper_3}>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               MERCHANT BAY
               <FaAsterisk
                 size={22}
@@ -366,7 +366,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TRAVASKO
               <FaAsterisk
                 size={22}
@@ -375,7 +375,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               NATIONAL POKER SERIES
               <FaAsterisk
                 size={22}
@@ -383,7 +383,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CRYSTA IVF
               <FaAsterisk
                 size={22}
@@ -391,7 +391,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -399,7 +399,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ARG TRADING
               <FaAsterisk
                 size={22}
@@ -407,7 +407,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -415,7 +415,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               75 STOCKS{" "}
               <FaAsterisk
                 size={22}
@@ -423,7 +423,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ART PARKK
               <FaAsterisk
                 size={22}
@@ -431,7 +431,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -442,7 +442,7 @@ function MarqueeSection() {
            
           </div>
           <div className={styles.marquee_text_wrapper_3}>
-          <p className={playFair_display.className}>
+          <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -450,7 +450,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               75 STOCKS{" "}
               <FaAsterisk
                 size={22}
@@ -458,7 +458,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ART PARKK
               <FaAsterisk
                 size={22}
@@ -466,7 +466,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               APS DIGITECH
               <FaAsterisk
                 size={22}
@@ -474,7 +474,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CANDES
               <FaAsterisk
                 size={22}
@@ -482,7 +482,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               NATIONAL POKER SERIES
               <FaAsterisk
                 size={22}
@@ -491,7 +491,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
                 size={22}
@@ -499,7 +499,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               ARG TRADING
               <FaAsterisk
                 size={22}
@@ -507,7 +507,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               TRAVASKO
               <FaAsterisk
                 size={22}
@@ -516,7 +516,7 @@ function MarqueeSection() {
               />
             </p>
 
-            <p className={playFair_display.className}>
+            <p className={raleway_display.className}>
               CITIZEN GEORGIA
               <FaAsterisk
                 size={22}

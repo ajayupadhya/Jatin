@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Tan-Pearl";
+  src: url("../public/fonts/TAN-PEARL.ttf");
+}
+
 html,
 body,
 div,
@@ -129,27 +134,29 @@ table {
 
 :root {
   --normal-font-size: 18px;
-  --big-font-size: 80px;
+  --big-font-size: 140px;
   --medium-font-size: 24px;
   --font-color-theme-dark: #f0f0f0;
   --font-color-theme-light: #000;
   --filer-color: #6b6b6b;
   --red-color: #f42513;
   --banner-font-size: 250px;
+  --padding: 228px 0px;
 }
 .app_container {
   padding: 0px 80px;
 }
 
 body {
-  background-color: #000;
-  background-image: url(../Images//backgroundImage.svg);
+  background-color: #0E1118;
+  background-image: url(../Images//Rectangle.svg);
   color: var(--font-color-theme-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  font-family: "Tan-Pearl";
 }
 .app_container {
   max-width: 1440px;
@@ -166,9 +173,10 @@ body {
 @media screen and (max-width: 1600px) and (min-width: 1248px) {
   :root {
     --normal-font-size: 14px;
-    --big-font-size: 80px;
+    --big-font-size: 140px;
     --medium-font-size: 20px;
     --banner-font-size: 200px;
+    --padding: 228px 0px;
   }
   .app_container {
     padding: 0px 80px;
@@ -178,32 +186,33 @@ body {
 @media screen and (max-width: 1248px) and (min-width: 900px) {
   :root {
     --normal-font-size: 14px;
-    --big-font-size: 72px;
+    --big-font-size: 140px;
     --medium-font-size: 20px;
     --banner-font-size: 170px;
+    --padding: 188px 0px;
   }
   .app_container {
     padding: 0px 80px;
-   
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
   :root {
     --normal-font-size: 14px;
-    --big-font-size: 64px;
+    --big-font-size: 100px;
     --medium-font-size: 20px;
     --banner-font-size: 140px;
+    --padding: 158px 0px;
   }
   .app_container {
     padding: 0px 80px;
   }
 }
 
-@media screen and (max-width: 600px) and (min-width:400px) {
+@media screen and (max-width: 600px) and (min-width: 400px) {
   :root {
     --normal-font-size: 12px;
-    --big-font-size: 56px;
+    --big-font-size: 80px;
     --medium-font-size: 14px;
     --banner-font-size: 64px;
   }
@@ -212,7 +221,6 @@ body {
     margin-top: 0px;
   }
 }
-
 
 @media screen and (max-width: 400px) {
   :root {
@@ -226,5 +234,3 @@ body {
     margin-top: 0px;
   }
 }
-
-

@@ -2,27 +2,27 @@
 import React from "react";
 import styles from "./footer.module.css";
 import Link from "next/link";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerLineSeparate}></div>
       <div className={styles.footerContainerTop}>
-        <Link href={"/"}>LINKEDIN</Link>
-        <Link href={"/"}>BEHANCE</Link>
-        <Link href={"/"}>INSTAGRAM </Link>
-        <Link href={"/"}>RESUME</Link>
+        <Link href={"/"} className={raleway_display.className}>LINKEDIN</Link>
+        <Link href={"/"} className={raleway_display.className}>BEHANCE</Link>
+        <Link href={"/"} className={raleway_display.className}>INSTAGRAM </Link>
+        <Link href={"/"} className={raleway_display.className}>RESUME</Link>
       </div>
       <div className={styles.footerLineSeparate}></div>
       <div className={styles.footerContainerMiddle}>
-        <p className={playFair_display.className}>
+        <p>
           Special thanks <span> DEVELOPER </span> for development
         </p>
       </div>
       <div className={styles.footerLineSeparate}></div>
       <div className={styles.footerContainerBottom}>
-        <p>JATIN SHARMA</p>
-        <p>All rights reserved 2023</p>
+        <p className={raleway_display.className}>JATIN SHARMA</p>
+        <p className={raleway_display.className}>All rights reserved 2023</p>
       </div>
     </footer>
   );

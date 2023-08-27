@@ -1,0 +1,32 @@
+.testimonialContainer {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: var(--padding);
+  flex-direction: column;
+  gap: 60px;
+}
+
+.testimonialTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.testimonialTitle > a {
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.testimonialCard {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  gap: 20px;
+}

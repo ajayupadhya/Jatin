@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import style from "./index.module.css";
 import CircleType from "circletype";
-import { playFair_display } from "@/app/fonts";
+import { raleway_display } from "@/app/fonts";
 const RotateOnScroll = () => {
   const circleInstance = useRef();
 
@@ -16,7 +16,7 @@ const RotateOnScroll = () => {
   return (
     <div className={style.container}>
       <div className={style.circular_text} ref={circleInstance}>
-        <p className={playFair_display.className}>Available for work • from OCT 2022 •</p>
+        <p className={raleway_display.className}>Available for work • from OCT 2022 •</p>
         
       </div>
       <div className={style.circle}></div>
