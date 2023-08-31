@@ -1,36 +1,58 @@
 .IntroContainer {
   display: flex;
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   align-items: flex-start;
   margin: auto;
-  gap: calc(var(--normal-font-size) * 5);
-  padding: calc(var(--normal-font-size) * 7) 0px;
+  padding-bottom: var(--padding);
+  flex-direction: column;
+}
+
+.IntroContainer > a {
+  color: var(--font-color-theme-dark);
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 60px;
 }
 
 .IntroContainerHeader {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
 }
-
-.IntroContainerHeader > a,
 .IntroContainerHeader > p {
   color: var(--font-color-theme-dark);
-  font-size: var(--normal-font-size);
+  font-size: var(--medium-font-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
+  width: 50%;
+  max-width: 540px;
 }
 
-.IntroContainerHeader > p {
-  color: var(--font-color-theme-dark);
-  font-size: var(--normal-font-size);
+.IntroContainerAbout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 328px;
+  width: 50%;
+  gap: var(--medium-font-size);
+}
+.IntroContainerAbout > p:first-child {
+  font-size: var(--smallest-font);
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 20px; /* 142.857% */
+}
+
+.IntroContainerAbout > p:last-child {
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
 }
 
 .IntroContainerImage {
@@ -49,17 +71,14 @@
 .IntroContainerAbout {
 }
 
-
-
-
-@media screen and (max-width:600px) {
-  .IntroContainer{
+@media screen and (max-width: 600px) {
+  .IntroContainer {
     flex-direction: column;
   }
-  .IntroContainerImage{
+  .IntroContainerImage {
     width: 100%;
   }
-  .IntroContainerText{
+  .IntroContainerText {
     width: 100%;
     align-items: normal;
   }

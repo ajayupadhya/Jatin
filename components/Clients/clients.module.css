@@ -9,6 +9,14 @@
     width: 100%;
     margin-bottom: 60px;
   }
+
+  .ClientContainerHeader > a {
+    color: var(--font-color-theme-dark);
+    font-size: var(--small-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   .clientContainer {
     display: flex;
     width: 100%;

@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div className="app_container">
       <Banner />
-      <Intro/>
       <Clients />
-      {/* <Marque/> */}
+      <Intro/>
+      <Marque/>
       <Services/>
       <Testimonial/>
       <LetsTalk />

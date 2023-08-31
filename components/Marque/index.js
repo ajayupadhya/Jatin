@@ -2,10 +2,16 @@ import React from "react";
 import { FaAsterisk } from "react-icons/fa";
 import styles from "./index.module.css";
 import { raleway_display } from "@/app/fonts";
-
+import Link from "next/link";
 function MarqueeSection() {
   return (
     <>
+      <div className={styles.marque_container}>
+        <Link href={"/"} className={raleway_display.className}>
+          {"/*"} CLIENTS
+        </Link>
+      </div>
+
       <div className={styles.marquee_section_container_desktop}>
         <div className={styles.line1}>
           <div className={styles.marquee_text_wrapper_1}>
@@ -211,7 +217,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            
+
             <p className={raleway_display.className}>
               CYBER PAL
               <FaAsterisk
@@ -244,7 +250,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-           
+
             <p className={raleway_display.className}>
               DEYOR CAMPS
               <FaAsterisk
@@ -253,7 +259,7 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            
+
             <p className={raleway_display.className}>
               TAXILA STONE
               <FaAsterisk
@@ -352,7 +358,6 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            
           </div>
         </div>
 
@@ -439,10 +444,9 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-           
           </div>
           <div className={styles.marquee_text_wrapper_3}>
-          <p className={raleway_display.className}>
+            <p className={raleway_display.className}>
               UNICORN
               <FaAsterisk
                 size={22}
@@ -524,7 +528,6 @@ function MarqueeSection() {
                 style={{ margin: "25px" }}
               />
             </p>
-            
           </div>
         </div>
       </div>

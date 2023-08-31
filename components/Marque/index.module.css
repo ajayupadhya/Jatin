@@ -1,7 +1,21 @@
 .marquee_section_container_desktop {
-  padding: 80px 0 0 0;
+  width: 99vw;
+  padding-bottom: var(--padding);
+}
 
+.marque_container{
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.marque_container > a {
+  color: var(--font-color-theme-dark);
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 60px;
 }
 
 .line1,
