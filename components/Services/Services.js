@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import RotateOnScroll from "../common/RotateOnScroll";
+// import RotateOnScroll from "../common/RotateOnScroll";
 import styles from "./services.module.css";
 import { raleway_display } from "@/app/fonts";
 const Services = () => {
@@ -40,13 +40,13 @@ const Services = () => {
   return (
     <div className={styles.serviceContainer}>
       <div className={styles.serviceContainerHeader}>
-        <Link href={"/"}>   {"/*"} SERVICES</Link>
+        <Link href={"/"} className={raleway_display.className}>   {"/*"} SERVICES</Link>
       </div>
 
       <div className={styles.serviceContainerData}>
         <div>
-          <p className={raleway_display.className}>Product Design</p>
-          <p className={raleway_display.className}>Web Design</p>
+          <p>Product Design</p>
+          <p>Web Design</p>
         </div>
         <div>
           <svg
@@ -63,15 +63,15 @@ const Services = () => {
             />
           </svg>
 
-          <p className={raleway_display.className}>Mobile Design</p>
-          <p className={raleway_display.className}>UX Strategy</p>
+          <p>Mobile Design</p>
+          <p>UX Strategy</p>
         </div>
         <div>
-          <p className={raleway_display.className}>Visual Design</p>
-          <p className={raleway_display.className}>Brand Identity</p>
+          <p>Visual Design</p>
+          <p>Brand Identity</p>
         </div>
       </div>
-      <RotateOnScroll />
+      {/* <RotateOnScroll /> */}
     </div>
   );
 };

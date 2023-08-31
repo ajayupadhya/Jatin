@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  padding: var(--padding);
+  padding-bottom: var(--padding);
   flex-direction: column;
   gap: 60px;
 }
@@ -29,4 +29,13 @@
   scroll-snap-type: x mandatory;
   width: 100%;
   gap: 20px;
+}
+
+
+.testimonialCard {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.testimonialCard::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }

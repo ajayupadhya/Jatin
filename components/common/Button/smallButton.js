@@ -5,6 +5,7 @@ import style from "./small.module.css";
 const Button = ({ text, link }) => {
   return (
     <Link href={link} className={style.link_button}>
+       <p>{text}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="19"

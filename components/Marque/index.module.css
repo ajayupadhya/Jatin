@@ -30,14 +30,17 @@
 .marquee_text_wrapper_1 > p,
 .marquee_text_wrapper_2 > p,
 .marquee_text_wrapper_3 > p {
-  color: #f0f0f0;
-  font-size: var(--big-font-size);
-  font-style: italic;
-  font-weight: 600;
+  color: #F0F0F0;
+  font-size: var(--medium-font-size);
+  font-weight: 400;
   line-height: normal;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 /* .marquee_text_2 {

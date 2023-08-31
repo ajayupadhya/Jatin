@@ -1,52 +1,50 @@
 .serviceContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    flex-direction: column;
-    position: relative;
-    padding: calc(var(--normal-font-size) * 7) 0px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: var(--padding);
+  overflow: hidden;
 }
-
 
 .serviceContainerHeader {
-    display: flex;
-    width: 100%;
-
+  display: flex;
+  width: 100%;
 }
 
-.serviceContainerHeader>a {
-    color: var(--font-color-theme-dark);
-    font-size: var(--normal-font-size);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.serviceContainerHeader > a {
+  color: var(--font-color-theme-dark);
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .serviceContainerData {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
 }
 
-.serviceContainerData>div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: calc(var(--big-font-size)/2);
-    flex-wrap: wrap;
-    gap: var(--normal-font-size) calc(var(--normal-font-size) * 5);
+.serviceContainerData > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: calc(var(--big-font-size) / 2);
+  flex-wrap: wrap;
+  gap: var(--medium-font-size) calc(var(--small-font-size) * 4);
 }
 
-.serviceContainerData>div>p {
-    color: var(--font-color-theme-dark);
+.serviceContainerData > div > p {
+  color: var(--font-color-theme-dark);
 
-    font-size: var(--big-font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
 }
 
 /* .serviceContainerData>p:nth-child(3){

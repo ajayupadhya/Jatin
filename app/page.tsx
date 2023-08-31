@@ -3,11 +3,11 @@ import { Banner, Clients, Intro, LetsTalk, Services  , Marque, Testimonial} from
 export default function Home() {
   return (
     <div className="app_container">
-      {/* <Banner />
+      <Banner />
       <Intro/>
-      <Services/>
       <Clients />
-      <Marque/> */}
+      {/* <Marque/> */}
+      <Services/>
       <Testimonial/>
       <LetsTalk />
     </div>

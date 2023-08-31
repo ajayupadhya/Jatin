@@ -1,73 +1,67 @@
 import Image from "next/image";
 import React from "react";
-import ProductImage from "../../Images/product.jpg";
+import DecorasDesktop from "../../Images/clients/decorasDesktop.png";
+import DecorasMobile from "../../Images/clients/decorasMobile.png";
+import BaziDesktop from "../../Images/clients/bazziDesktop.png";
+import BaziMobile from "../../Images/clients/baziMobile.png";
+import TaxilaDesktop from "../../Images/clients/taxilaDesktop.png";
+import TaxilaMobile from "../../Images/clients/taxilaMobile.png";
+import Link from "next/link";
 import Button from "../common/Button/smallButton";
 import style from "./clients.module.css";
 import { raleway_display } from "@/app/fonts";
 const Clients = () => {
   const data = [
     {
-      title: "Decoras",
+      title: "Decoras Furniture",
       client: "DECORASUSA.COM",
       timeline: "JULY 2021",
       role: "BRANDING, UX/UI, DEV",
-      image: ProductImage,
+      image: DecorasDesktop,
+      imageMobile: DecorasMobile,
       link: "/",
     },
     {
-      title: "Decoras",
+      title: "Baazi Games",
       client: "DECORASUSA.COM",
       timeline: "JULY 2021",
       role: "BRANDING, UX/UI, DEV",
-      image: ProductImage,
+      image: BaziDesktop,
+      imageMobile: BaziMobile,
       link: "/",
     },
     {
-      title: "Decoras",
+      title: "Taxila Stone",
       client: "DECORASUSA.COM",
       timeline: "JULY 2021",
       role: "BRANDING, UX/UI, DEV",
-      image: ProductImage,
-      link: "/",
-    },
-    {
-      title: "Decoras",
-      client: "DECORASUSA.COM",
-      timeline: "JULY 2021",
-      role: "BRANDING, UX/UI, DEV",
-      image: ProductImage,
+      image: TaxilaDesktop,
+      imageMobile: TaxilaMobile,
       link: "/",
     },
   ];
   return (
     <>
+      <div className={style.ClientContainerHeader}>
+        <Link href={"/"} className={raleway_display.className}>
+          {"/*"} WORKS
+        </Link>
+      </div>
       <div className={style.clientContainer}>
         {data.map((item, index) => {
           return (
-            <div
-              key={index}
-              className={style.singleClient}
-              style={
-                index % 2 !== 0
-                  ? { flexDirection: "row-reverse" }
-                  : { flexDirection: "row" }
-              }
-            >
+            <div key={index} className={style.singleClient}>
               <div className={style.singleClientImage}>
                 <Image src={item.image} alt={item.image} />
               </div>
               <div className={style.singleClientText}>
-                <div>
-                  {"/*"} WORK 0{index + 1} / 0{data.length}
-                </div>
-                <h4 className={raleway_display.className}>{item.title}</h4>
                 <div className={style.singleClientTextContainer}>
-                  <p>* CLIENT : {item.client}</p>
-                  <p>* TIMELINE : {item.timeline}</p>
-                  <p>* ROLE : {item.role}</p>
+                  <p>0{index + 1} / 0{data?.length}</p>
+                  <h4>{item.title}</h4>
+                  <p className={raleway_display.className}> Website Design : {item.timeline}</p>
                 </div>
 
-                <Button text={"VIEW CASE STUDY"} link={item.link} />
+                <Button text={"View Case"} link={item.link} />
               </div>
             </div>
           );
@@ -76,7 +70,7 @@ const Clients = () => {
 
       <div className={style.clientContainerMobile}>
         <div className={style.work_count_mobile}>
-          <p>/* WORK</p> <p>{/* 0 {index + 1} / 0{data.length} */}01/05</p>
+          <p> {"/*"} WORK</p> <p>{/* 0 {index + 1} / 0{data.length} */}01/05</p>
         </div>
         <div className={style.carousalContainer}>
           {data.map((item, index) => {

@@ -23,7 +23,7 @@
 }
 
 .footerContainerTop > a {
-  font-size: var(--normal-font-size);
+  font-size: var(--smallest-font);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -39,7 +39,7 @@
 }
 
 .footerContainerMiddle > p {
-  font-size: var(--medium-font-size);
+  font-size: var(--special-thanks);
 
   font-style: normal;
   font-weight: 400;
@@ -60,7 +60,7 @@
 }
 .footerContainerBottom > p {
   color: var(--filer-color);
-  font-size: calc(var(--normal-font-size) - 4px);
+  font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -71,7 +71,7 @@
   .footerContainerTop {
     padding: 20px;
   }
-  .footerContainerBottom > p {
+  /* .footerContainerBottom > p {
     font-size: calc(var(--normal-font-size) - 2px);
-  }
+  } */
 }

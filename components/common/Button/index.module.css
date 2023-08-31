@@ -1,6 +1,6 @@
 .link_button {
   display: flex;
-  width: 320px;
+  width: 160px;
   height: 56px;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,14 @@
   position: relative;
   border-radius: 10px;
   background-color: transparent;
+}
+
+.link_button > p {
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 .link_button::after {
@@ -28,7 +36,6 @@
   border-bottom: 1px #fff solid;
   border-radius: 10px;
 }
-
 
 @media screen and (max-width: 600px) {
   .link_button {

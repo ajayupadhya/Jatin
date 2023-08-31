@@ -5,7 +5,7 @@ import style from "./index.module.css";
 const Button = ({ text, link }) => {
   return (
     <Link href={link} className={style.link_button}>
-      <p> {text}</p>
+      <p>{text}</p>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
