@@ -2,8 +2,8 @@
   .header_container_mobile {
     display: none;
   }
+
   .header_container {
-    background-color: #000;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,9 +19,10 @@
   }
 
   .header_container_left > a > p {
-    font-size: var(--normal-font-size);
+    font-size: var(--smallest-font);
     font-weight: 600;
     text-transform: uppercase;
+    line-height: normal;
   }
   .header_container_right {
     display: flex;
@@ -37,12 +38,14 @@
     text-decoration: none;
   }
 
-  .header_container_right > ul > li > a {
+  .header_container_right > ul > li  {
     text-transform: uppercase;
-    font-size: var(--normal-font-size);
+    font-size: var(--smallest-font);
     font-weight: 600;
     cursor: pointer;
   }
+  
+ 
 }
 
 @media screen and (max-width: 600px) {

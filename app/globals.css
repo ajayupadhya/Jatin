@@ -6,6 +6,9 @@
   font-family: "Tan-Pearl";
   src: url("../public/fonts/TAN-PEARL.ttf");
 }
+* {
+  scroll-behavior: smooth;
+}
 
 html,
 body,
@@ -136,9 +139,9 @@ table {
   --big-font-size: 140px;
   --medium-font-size: 40px;
   --normal-font-size: 24px;
-  --special-thanks:20px;
+  --special-thanks: 20px;
   --small-font-size: 16px;
-  --smallest-font:14px;
+  --smallest-font: 14px;
   --font-color-theme-dark: #f0f0f0;
   --font-color-theme-light: #000;
   --filer-color: #6b6b6b;
@@ -150,7 +153,7 @@ table {
 }
 
 body {
-  background-color: #0E1118;
+  background-color: #0e1118;
   background-image: url(../Images//Rectangle.svg);
   color: var(--font-color-theme-dark);
   display: flex;
@@ -177,9 +180,9 @@ body {
     --big-font-size: 140px;
     --medium-font-size: 40px;
     --normal-font-size: 24px;
-    --special-thanks:20px;
+    --special-thanks: 20px;
     --small-font-size: 16px;
-    --smallest-font:14px;
+    --smallest-font: 14px;
     --padding: 228px;
   }
   .app_container {
@@ -192,9 +195,9 @@ body {
     --big-font-size: 100px;
     --medium-font-size: 30px;
     --normal-font-size: 16px;
-    --special-thanks:14px;
+    --special-thanks: 14px;
     --small-font-size: 12px;
-    --smallest-font:10px;
+    --smallest-font: 10px;
     --padding: 158px;
   }
   .app_container {
@@ -207,9 +210,9 @@ body {
     --big-font-size: 100px;
     --medium-font-size: 30px;
     --normal-font-size: 16px;
-    --special-thanks:14px;
+    --special-thanks: 14px;
     --small-font-size: 12px;
-    --smallest-font:10px;
+    --smallest-font: 10px;
     --padding: 158px;
   }
   .app_container {

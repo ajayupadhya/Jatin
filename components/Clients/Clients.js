@@ -42,7 +42,7 @@ const Clients = () => {
   ];
   return (
     <>
-      <div className={style.ClientContainerHeader}>
+      <div className={style.ClientContainerHeader} id = "works">
         <Link href={"/"} className={raleway_display.className}>
           {"/*"} WORKS
         </Link>

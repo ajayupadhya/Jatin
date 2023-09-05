@@ -5,8 +5,16 @@ import styles from "./banner.module.css";
 import Image from "next/image";
 import LoaderImage from "../../Images/indiaGate.svg";
 import { raleway_display } from "@/app/fonts";
+import Jatin from "../../Images/jatin.png";
 const LoadScreen = ({ loaderChange }) => {
   const [count, setCount] = useState(0);
+  let time = new Date().toLocaleTimeString();
+  const [ctime, setTime] = useState(time);
+  const UpdateTime = () => {
+    time = new Date().toLocaleTimeString();
+    setTime(time);
+  };
+  setInterval(UpdateTime);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,9 +33,16 @@ const LoadScreen = ({ loaderChange }) => {
     };
   }, []);
 
+
+
+  const handleClickScroll = () => {
+    // 
+    window.scrollBy(0 , window.innerHeight + 100 )
+  };
+
   return (
     <>
-      <div
+      {/* <div
         className={`${styles.loaderScreen} ${
           count === 100 && styles.animate_loader
         }`}
@@ -56,16 +71,52 @@ const LoadScreen = ({ loaderChange }) => {
             {count} <span className={raleway_display.className}> &#37;</span>
           </p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.mainBannerContainer}>
         <div className={styles.mainBannerTextContainer}>
-          <div className={styles.mainBannerTextUpper}>
-            <p className={`${styles.text} ${raleway_display.className}`}>DIGITAL</p>
-            <Image src={LoaderImage} alt="india gate" />
-          </div>
+          <Image src={LoaderImage} alt="india gate" />
+
           <div className={styles.mainBannerTextLower}>
-            <p className={`${styles.text} ${raleway_display.className}`}>DESIGNER</p>
+            <p className={`${styles.text}`}>
+              {" "}
+              <span>DIGITAL</span>
+            </p>
+            <p className={`${styles.text}`}>
+              {" "}
+              <span>DESIGNER</span>
+            </p>
+            <div>
+              <p className={raleway_display.className}> NEW DELHI</p>
+              <p className={raleway_display.className}>{ctime}(+5:30)</p>
+            </div>
           </div>
+        </div>
+        <div className={styles.mainBannerImage}>
+          <Image src={Jatin} alt="Jatin" />
+        </div>
+        <div className={styles.mainBannerDown} onClick={handleClickScroll}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="53"
+            viewBox="0 0 32 53"
+            fill="none"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="31"
+              height="52"
+              rx="15.5"
+              stroke="#F0F0F0"
+              stroke-opacity="0.6"
+            />
+            <path
+              d="M22 28.1149C22 28.1149 19.0458 28.6217 17.7812 29.8621C16.5167 31.1024 16 34 16 34M16 34C16 34 15.4833 31.1024 14.2187 29.8621C12.9542 28.6217 10 28.1149 10 28.1149M16 34L16 18"
+              stroke="#F0F0F0"
+              stroke-opacity="0.6"
+            />
+          </svg>
         </div>
       </div>
     </>
