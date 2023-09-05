@@ -1,5 +1,4 @@
 import "./globals.css";
-import { source_code_pro } from "./fonts";
 import { Header, Footer } from "@/components";
 
 export const metadata = {
