@@ -6,6 +6,8 @@
   width: 100%;
 }
 
+
+
 .footerLineSeparate {
   display: flex;
   width: 100%;
@@ -18,7 +20,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 40px calc(var(--big-font-size) * 2);
+  max-width: 1440px;
+  padding: 40px 80px;
   gap: calc(var(--big-font-size) / 2);
 }
 
@@ -54,9 +57,10 @@
 .footerContainerBottom {
   display: flex;
   align-items: baseline;
-  padding: 40px calc(var(--big-font-size) * 2) 66px;
   flex-direction: column;
-  align-self: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px 80px;
 }
 .footerContainerBottom > p {
   color: var(--filer-color);

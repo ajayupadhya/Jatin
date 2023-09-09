@@ -75,7 +75,7 @@ const Testimonial = () => {
   return (
     <div className={styles.testimonialContainer}>
       <div className={styles.testimonialTitle}>
-        <Link href={"/"} className={raleway_display.className}>/* Testimonial</Link>
+        <Link href={"/"} className={raleway_display.className}>{"/*"} TESTIMONIAL</Link>
       </div>
       <div className={styles.testimonialCard}>
         {data.map((item, index) => (

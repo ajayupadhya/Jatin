@@ -155,6 +155,7 @@ table {
 body {
   background-color: #0e1118;
   background-image: url(../Images//Rectangle.svg);
+  
   color: var(--font-color-theme-dark);
   display: flex;
   align-items: center;

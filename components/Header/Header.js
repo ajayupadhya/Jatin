@@ -5,62 +5,92 @@ import Link from "next/link";
 import { raleway_display } from "@/app/fonts";
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
-  const [logoChange, setLogoChange] = useState(false);
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight) {
-        setLogoChange(true);
-      } else {
-        setLogoChange(false);
-      }
-    });
-  }, []);
+  const [logoChange, setLogoChange] = useState(1);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(50);
 
-  const handleClickScroll = (val , scrollVal) => {
-    //
-    window.scrollBy(0, window.innerHeight * val + scrollVal);
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+
+      // remember current page location to use in the next move
+      if(window.scrollY > 50) setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
+  const handleClickScroll = (val, scrollVal, clicked) => {
+    setLogoChange(clicked);
+    window.scrollTo(0, window.innerHeight * val + scrollVal);
   };
 
   return (
     <>
-      <div className={styles.header_container_outer}>
-        <nav className={styles.header_container}>
-          {logoChange ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M30 10L25 10L25 30L25 40L15 40L10 40L10 30L15 30L15 10L15 -2.18557e-06L25 -1.31134e-06L30 -8.74228e-07L30 10ZM30 10L40 10L40 20L30 20L30 10ZM10 30L10 20L-5.88094e-06 20L-6.75517e-06 30L10 30Z"
-                fill="#D9D9D9"
-              />
-            </svg>
-          ) : (
+      {show && (
+        <div className={styles.header_container_outer}>
+          <nav className={styles.header_container}>
             <div className={styles.header_container_left}>
               <Link href="/" passHref>
                 <p>Jatin Sharma</p>
                 <p>.Design</p>
               </Link>
             </div>
-          )}
 
-          <div className={styles.header_container_right}>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
+            <div className={styles.header_container_right}>
+              <ul>
+                <li
+                  onClick={() => handleClickScroll(0, 0, 1)}
+                  style={
+                    logoChange === 1
+                      ? { textDecoration: "underline", textUnderlineOffset: 5 }
+                      : { textDecoration: "none", opacity: 0.5 }
+                  }
+                >
+                  Home
+                </li>
 
-              <li onClick={() => handleClickScroll(1 , 100)}>Works</li>
-              <li onClick={() => handleClickScroll(5 , 230)}>Contact</li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+                <li
+                  onClick={() => handleClickScroll(1, 100, 2)}
+                  style={
+                    logoChange === 2
+                      ? { textDecoration: "underline", textUnderlineOffset: 5 }
+                      : { textDecoration: "none", opacity: 0.5 }
+                  }
+                >
+                  Works
+                </li>
+                <li
+                  onClick={() => handleClickScroll(5, 230, 3)}
+                  style={
+                    logoChange === 3
+                      ? { textDecoration: "underline", textUnderlineOffset: 5 }
+                      : { textDecoration: "none", opacity: 0.5 }
+                  }
+                >
+                  Contact
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      )}
 
       <nav className={styles.header_container_mobile}>
         <div className={styles.header_container_left_mobile}>
