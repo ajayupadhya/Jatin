@@ -118,10 +118,11 @@
 
   .carousalContainer {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 90%;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-auto-columns: 100%;
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
     overscroll-behavior-inline: contain;
     gap: 20px;
     scroll-snap-type: x mandatory;
@@ -131,11 +132,14 @@
   .singleClientMobile {
     display: flex;
     width: 100%;
+    background-color: #000;
     flex-direction: column;
     scroll-snap-align: start;
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .singleClientTextMobile {
@@ -149,7 +153,8 @@
 
   .singleClientTextMobile > h4 {
     color: var(--font-color-theme-dark);
-    font-size: var(--big-font-size);
+    /* font-size: var(--big-font-size); */
+    font-size: 24px;
     font-style: italic;
     font-weight: 400;
     line-height: 64px; /* 114.286% */
@@ -166,7 +171,7 @@
   }
 
   .singleClientTextContainerMobile {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -182,10 +187,23 @@
 
   .singleClientTextContainerMobile > div > p {
     color: var(--font-color-theme-dark);
-
     font-size: var(--normal-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .singleClientTextRoleTextMobile {
+    font-size: 14px;
+  }
+
+  .smallButtonLink {
+    width: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .singleClientTextMobile {
+      position: relative;
+    }
   }
 }

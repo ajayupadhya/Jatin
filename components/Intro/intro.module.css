@@ -83,4 +83,27 @@
     width: 100%;
     align-items: normal;
   }
+
+  .IntroContainerHeader {
+    display: block;
+  }
+
+  .IntroContainerHeader > p {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 40px; /* 166.667% */
+  }
+
+  .IntroContainerAbout > p {
+    width: 100%;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }

@@ -42,12 +42,12 @@ const Clients = () => {
   ];
   return (
     <>
-      <div className={style.ClientContainerHeader} id = "works">
-        <Link href={"/"} className={raleway_display.className}>
-          {"/*"} WORKS
-        </Link>
-      </div>
       <div className={style.clientContainer}>
+        <div className={style.ClientContainerHeader} id = "works">
+          <Link href={"/"} className={raleway_display.className}>
+            {"/*"} WORKS
+          </Link>
+        </div>
         {data.map((item, index) => {
           return (
             <div key={index} className={style.singleClient}>
@@ -76,21 +76,27 @@ const Clients = () => {
           {data.map((item, index) => {
             return (
               <div key={index} className={style.singleClientMobile}>
-                <div className={style.singleClientTextMobile}>
-                  <h4 className={raleway_display.classNameMobile}>
-                    {item.title}
-                  </h4>
-                </div>
+                
                 <div className={style.singleClientImageMobile}>
                   <Image src={item.image} alt={item.image} />
+                  <div className={style.singleClientTextMobile}>
+                    <h4 className={raleway_display.classNameMobile}>
+                      {item.title}
+                    </h4>
+                  </div>
                   <div className={style.singleClientTextContainerMobile}>
                     <div>
-                      <p>CLIENT : {item.client}</p>
-                      <p>TIMELINE : {item.timeline}</p>
-                      <p>ROLE : {item.role}</p>
+                      <p>{item.client}</p>
+                      <p className="singleClientTextRoleTextMobile">{item.role} . {item.timeline}</p>
+                      <p></p>
                     </div>
 
-                    <Button text={"VIEW CASE STUDY"} link={item.link} />
+                    <Button link={item.link} className={style.smallButtonLink}>
+                      <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1724 1C15.1724 1 15.9326 5.43128 17.7931 7.32813C19.6536 9.22497 24 10 24 10M24 10C24 10 19.6536 10.775 17.7931 12.6719C15.9326 14.5687 15.1724 19 15.1724 19M24 10L0 10" stroke="#F0F0F0"/>
+                      </svg>
+                    </Button>
+
                   </div>
                 </div>
               </div>
