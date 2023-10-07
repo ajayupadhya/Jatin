@@ -29,6 +29,10 @@
     padding-bottom: var(--padding);
   }
 
+  .workDateMobile {
+    display: none;
+  }
+
   .singleClient {
     display: flex;
     align-items: center;
@@ -108,6 +112,15 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  .workDateMobile {
+    margin-bottom: 20px;
+    color: rgba(240, 240, 240, 0.6);
+    size: 24px;
+    font-family: 'TAN-PEARL';
+    font-weight: 400;
+  }
+
   .work_count_mobile > p {
     color: var(--font-color-theme-dark);
     font-size: var(--normal-font-size);
@@ -140,6 +153,7 @@
     position: relative;
     padding: 20px;
     border-radius: 20px;
+    margin-bottom: 100px;
   }
 
   .singleClientTextMobile {
@@ -157,21 +171,21 @@
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
-    line-height: 64px; /* 114.286% */
+    line-height: 32px; /* 114.286% */
   }
 
   .singleClientImageMobile {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     margin-top: 40px;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
   }
 
   .singleClientTextContainerMobile {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -194,11 +208,22 @@
   }
 
   .singleClientTextRoleTextMobile {
-    font-size: 14px;
+    font-size: 14px !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255, 0.6) !important;
   }
 
   .smallButtonLink {
     width: auto;
+  }
+
+  .allWorkButton {
+    margin-bottom: 100px;
+  }
+
+  .allWorkButton > p {
+    font-size: 12px;
   }
 
   @media screen and (max-width: 600px) {
