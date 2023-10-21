@@ -13,7 +13,7 @@ import { raleway_display } from "@/app/fonts";
 const Clients = () => {
   const data = [
     {
-      title: "Decoras Furniture ABSJASNKJS",
+      title: "Decoras Furniture",
       client: "DECORASUSA.COM",
       timeline: "2021",
       role: "Website Design",
