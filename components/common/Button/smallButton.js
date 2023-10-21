@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 import style from "./small.module.css";
 import { raleway_display } from "@/app/fonts";
-const Button = ({ text, link }) => {
+const Button = ({ text, link, className }) => {
   return (
-    <Link href={link} className={style.link_button}>
+    <Link href={link} className={`${style.link_button} ${className}`}>
        <p className={raleway_display.className}>{text}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"

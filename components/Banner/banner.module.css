@@ -207,10 +207,16 @@
     gap: 22px;
   }
 
+  .mainBannerOuter {
+    height: 100vh;
+  }
+
   .mainBannerContainer {
     width: 90%;
     overflow: hidden;
     height: 91vh;
+    padding: 20px;
+    justify-content: center;
   }
 
   .mainBannerTextContainer {
@@ -225,11 +231,15 @@
 
   .mainBannerTextUpper,
   .mainBannerTextLower {
-    height: 60px;
+    /* height: 60px; */
+    display: block;
+    font-size: 49px;
+    margin-block: 24px;
   }
 
   .text {
-    font-size: var(--banner-font-size);
+    /* font-size: var(--banner-font-size); */
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
@@ -237,6 +247,32 @@
     animation: text-slide 0.8s cubic-bezier(0.42, 0, 0, 1.29) forwards;
     margin: 0;
     padding: 0;
+  }
+
+  .mainBannerImage {
+    max-width: 210px;
+  }
+
+  .mainBannerTextContainer > img {
+    width: 51px;
+    height: 73px;
+  }
+
+  .mainBannerTextLower > div > p {
+    font-size: 14px;
+    color: #F0F0F099;
+  }
+
+  .mainBannerTextLower > p > span {
+    font-size: 49px;
+  }
+
+  .mainBannerDown {
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: flex-end;
   }
 }
 
