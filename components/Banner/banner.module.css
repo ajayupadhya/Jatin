@@ -269,19 +269,19 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 120vh;
+    height: 100dvh;
     margin-top: 0px;
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
   }
 
   .mainBannerOuter {
-    height: 100vh;
+    height: 100dvh;
   }
 
   .mainBannerContainer {
     width: 90%;
     overflow: visible;
-    height: 100vh;
+    height: 100dvh;
     padding: 0px;
     justify-content: center;
   }
