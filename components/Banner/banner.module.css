@@ -19,23 +19,6 @@
   display: none;
 }
 
-
-.progressMainWrapper {
-  background-color: black;
-  height: 15px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-}
-
-.progressMainStyle {
-  height: 15px;
-  background-color: #00cc83;
-  width: 15%;
-}
-
 .loaderBackground{
   background: linear-gradient(180deg, #f42513 0%, #000 100%);
   position: fixed;
