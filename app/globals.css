@@ -155,7 +155,7 @@ table {
 body {
   background-color: #0e1118;
   background-image: url(../Images//Rectangle.svg);
-  
+
   color: var(--font-color-theme-dark);
   display: flex;
   align-items: center;
@@ -245,4 +245,20 @@ body {
     padding: 0px 20px;
     margin-top: 0px;
   }
+}
+
+.progressMainWrapper {
+  background-color: black;
+  height: 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+.progressMainStyle {
+  height: 4px;
+  background: #fff;
+  width: 15%;
 }

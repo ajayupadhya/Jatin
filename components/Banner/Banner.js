@@ -8,6 +8,10 @@ import { raleway_display } from "@/app/fonts";
 import Jatin from "../../Images/jatin.png";
 const LoadScreen = ({ loaderChange }) => {
   const [count, setCount] = useState(0);
+  const [scale, setScale] = useState(1);
+  const [rotate, setRotate] = useState(0);
+
+
   let time = new Date().toLocaleTimeString();
   const [ctime, setTime] = useState(time);
   const UpdateTime = () => {
@@ -15,6 +19,10 @@ const LoadScreen = ({ loaderChange }) => {
     setTime(time);
   };
   setInterval(UpdateTime);
+
+ 
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +32,7 @@ const LoadScreen = ({ loaderChange }) => {
           loaderChange(false);
           return prevCount;
         }
+
         return prevCount + 1;
       });
     }, 50);
@@ -31,6 +40,19 @@ const LoadScreen = ({ loaderChange }) => {
     return () => {
       clearInterval(interval);
     };
+  }, []);
+
+  useEffect(() => {
+    // Rotate and scale up after 1 second
+    setTimeout(() => {
+      setRotate(180);
+      setScale(200);
+
+      // Reset to original size after 2 seconds (1 second rotation + 1 second scaling)
+      setTimeout(() => {
+        setScale(1);
+      }, 1000); // Start the reset after 2 seconds
+    }, 1);
   }, []);
 
   const handleClickScroll = () => {
@@ -41,10 +63,11 @@ const LoadScreen = ({ loaderChange }) => {
   return (
     <>
       {/* <div
-        className={`${styles.loaderScreen} ${
+        className={`${styles.loaderScreen}  ${
           count === 100 && styles.animate_loader
         }`}
       >
+        <div className={styles.loaderBackground}></div>
         <progress max={100} value={count} />
 
         <div className={styles.LoaderCounterContainer}>
@@ -70,6 +93,8 @@ const LoadScreen = ({ loaderChange }) => {
           </p>
         </div>
       </div> */}
+
+     
       <div className={styles.mainBannerOuter}>
         <div className={styles.mainBannerContainer}>
           <div className={styles.mainBannerTextContainer}>

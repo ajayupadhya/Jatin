@@ -10,13 +10,85 @@
   right: 0;
   bottom: 0;
   z-index: 100;
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  background-color: #0b0c10;
   background-image: url(../../Images/backgroundImage.svg);
   transform: translateX(0vh);
 }
 
 .loaderHide {
   display: none;
+}
+
+
+.progressMainWrapper {
+  background-color: black;
+  height: 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+.progressMainStyle {
+  height: 15px;
+  background-color: #00cc83;
+  width: 15%;
+}
+
+.loaderBackground{
+  background: linear-gradient(180deg, #f42513 0%, #000 100%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 0vh;
+  animation-name: add-background;
+  animation-duration: 2.5s;
+  animation-delay: 3s;
+  z-index: 100;
+}
+.LoaderImageContainer {
+  justify-content: flex-end;
+  width: fit-content;
+  animation: zoom-in, zoom-out;
+  animation-duration: 2.5s, 1.75s;
+  animation-delay: 0.5s, 2.5s;
+
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(200) rotate(180deg);
+  }
+}
+@keyframes zoom-out {
+  0% {
+    transform: scale(200) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes add-background {
+  0% {
+    
+    height: 0vh;
+  }
+  50% {
+    
+    height: 100vh;
+  }
+  100% {
+    height:0px;
+  }
 }
 
 .LoaderImageContainer > img {
@@ -43,17 +115,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: max-content;
+  width: 100%;
+  height: 100%;
   gap: 61px;
+  position: relative;
 }
 
 .LoaderCounterContainer > p {
   color: var(--font-color-theme-dark);
-  font-size: var(--big-font-size);
+  font-size: var(--medium-font-size);
   font-style: italic;
   font-weight: 600;
   line-height: 54px;
   text-transform: uppercase;
+  width: max-content;
+  position: absolute;
+  bottom: 23px;
 }
 
 .animate_loader {
@@ -77,14 +154,14 @@
 
 /* // Main Banner css  */
 
-.mainBannerOuter{
+.mainBannerOuter {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   /* height: 100vh; */
   margin-top: -44px;
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .mainBannerContainer {

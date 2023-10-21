@@ -22,7 +22,7 @@ line-height: normal;
 text-transform: capitalize;
 }
 
-.link_button::after {
+.link_button:hover:after {
   content: "";
   display: block;
   position: absolute;

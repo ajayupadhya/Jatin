@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
 import { raleway_display } from "@/app/fonts";
+import HeaderWorks from "./HeaderWorks"
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
   const [logoChange, setLogoChange] = useState(1);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(50);
+  const [openWorks, setOpenWorks] = useState(false)
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -67,7 +69,7 @@ const Header = () => {
                 </li>
 
                 <li
-                  onClick={() => handleClickScroll(1, 100, 2)}
+                  onClick={() => setOpenWorks(true)}
                   style={
                     logoChange === 2
                       ? { textDecoration: "underline", textUnderlineOffset: 5 }
@@ -159,6 +161,9 @@ const Header = () => {
           )}
         </div>
       </nav>
+      {
+        openWorks && <HeaderWorks/>
+      }
     </>
   );
 };
