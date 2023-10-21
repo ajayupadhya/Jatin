@@ -19,7 +19,7 @@
   display: none;
 }
 
-.loaderBackground{
+.loaderBackground {
   background: linear-gradient(180deg, #f42513 0%, #000 100%);
   position: fixed;
   left: 0;
@@ -38,7 +38,6 @@
   animation: zoom-in, zoom-out;
   animation-duration: 2.5s, 1.75s;
   animation-delay: 0.5s, 2.5s;
-
 }
 
 @keyframes zoom-in {
@@ -62,15 +61,13 @@
 
 @keyframes add-background {
   0% {
-    
     height: 0vh;
   }
   50% {
-    
     height: 100vh;
   }
   100% {
-    height:0px;
+    height: 0px;
   }
 }
 
@@ -268,19 +265,30 @@
   }
 
   .mainBannerOuter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 120vh;
+    margin-top: 0px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .mainBannerOuter {
     height: 100vh;
   }
 
   .mainBannerContainer {
     width: 90%;
-    overflow: hidden;
-    height: 91vh;
-    padding: 20px;
+    overflow: visible;
+    height: 100vh;
+    padding: 0px;
     justify-content: center;
   }
 
   .mainBannerTextContainer {
     gap: 1px;
+    margin-top: -180px;
   }
 
   .mainBannerTextUpper > img {
@@ -311,6 +319,8 @@
 
   .mainBannerImage {
     max-width: 210px;
+    max-height: 500px;
+    top: 50px;
   }
 
   .mainBannerTextContainer > img {
@@ -320,7 +330,7 @@
 
   .mainBannerTextLower > div > p {
     font-size: 14px;
-    color: #F0F0F099;
+    color: #f0f0f099;
   }
 
   .mainBannerTextLower > p > span {
@@ -333,6 +343,7 @@
     height: 100%;
     position: absolute;
     justify-content: flex-end;
+    top: 0px;
   }
 }
 

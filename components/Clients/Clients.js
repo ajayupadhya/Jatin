@@ -76,7 +76,7 @@ const Clients = () => {
           {data.map((item, index) => {
             return (
               <div key={index} >
-                <h2 className={style.workDateMobile}>01/05</h2>
+                <h2 className={style.workDateMobile}>0{index + 1} / 0{data?.length}</h2>
                 <div key={index} className={style.singleClientMobile}>
                 
                 <div className={style.singleClientImageMobile}>

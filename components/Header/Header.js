@@ -3,19 +3,19 @@ import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
 import { raleway_display } from "@/app/fonts";
-import HeaderWorks from "./HeaderWorks"
+import HeaderWorks from "./HeaderWorks";
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
   const [logoChange, setLogoChange] = useState(1);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(50);
-  const [openWorks, setOpenWorks] = useState(false)
+  const [openWorks, setOpenWorks] = useState(false);
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         // if scroll down hide the navbar
-        
+
         setShow(false);
       } else {
         // if scroll up show the navbar
@@ -23,7 +23,7 @@ const Header = () => {
       }
 
       // remember current page location to use in the next move
-      if(window.scrollY > 50) setLastScrollY(window.scrollY);
+      if (window.scrollY > 50) setLastScrollY(window.scrollY);
     }
   };
 
@@ -135,35 +135,77 @@ const Header = () => {
 
               <ul className={styles.drawerOpen_mobile_text_container}>
                 <li>
-                  <Link href="/" className={raleway_display.className}>
+                  <Link
+                    href="/"
+                    className={raleway_display.className}
+                    style={
+                      logoChange === 1
+                        ? {
+                            textDecoration: "line-through",
+                            fontStyle: "italic",
+                            color: "#fff",
+                          }
+                        : { textDecoration: "none", fontStyle: "normal" }
+                    }
+                  >
                     Home
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#works" className={raleway_display.className}>
+                  <Link
+                    href="/works"
+                    className={raleway_display.className}
+                    style={
+                      logoChange === 2
+                        ? {
+                            textDecoration: "line-through",
+                            fontStyle: "italic",
+                            color: "#fff",
+                          }
+                        : { textDecoration: "none", fontStyle: "normal" }
+                    }
+                  >
                     Works
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className={raleway_display.className}>
+                  <Link
+                    href="/#contact"
+                    className={raleway_display.className}
+                    style={
+                      logoChange === 3
+                        ? {
+                            textDecoration: "line-through",
+                            fontStyle: "italic",
+                            color: "#fff",
+                          }
+                        : { textDecoration: "none", fontStyle: "normal" }
+                    }
+                  >
                     Contact
                   </Link>
                 </li>
               </ul>
               <div className={styles.drawerOpenFooter}>
-                <Link href={"/"}>LINKEDIN</Link>
-                <Link href={"/"}>BEHANCE</Link>
-                <Link href={"/"}>INSTAGRAM</Link>
-                <Link href={"/"}>RESUME</Link>
+                <Link href={"/"} className={raleway_display.className}>
+                  LINKEDIN
+                </Link>
+                <Link href={"/"} className={raleway_display.className}>
+                  BEHANCE
+                </Link>
+                <Link href={"/"} className={raleway_display.className}>
+                  INSTAGRAM
+                </Link>
+                <Link href={"/"} className={raleway_display.className}>
+                  RESUME
+                </Link>
               </div>
             </div>
           )}
         </div>
       </nav>
-      {
-        openWorks && <HeaderWorks/>
-      }
+      {openWorks && <HeaderWorks />}
     </>
   );
 };

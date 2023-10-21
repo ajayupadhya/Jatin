@@ -1,14 +1,14 @@
 import React from "react";
 import { FaAsterisk } from "react-icons/fa";
 import styles from "./index.module.css";
-import { tan_pearl } from "@/app/fonts";
+import { tan_pearl , raleway_display } from "@/app/fonts";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 function MarqueeSection() {
   return (
     <>
       <div className={styles.marque_container}>
-        <Link href={"/"} className={tan_pearl.className}>
+        <Link href={"/"} className={raleway_display.className}>
           {"/*"} CLIENTS
         </Link>
       </div>

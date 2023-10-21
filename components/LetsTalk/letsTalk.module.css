@@ -47,9 +47,11 @@
   .letsTalkContainer {
     align-items: flex-start;
     width: 100%;
+    flex-direction: column;
+    gap: 20px;
   }
   .letsTalkContainer > h4 {
-    width: 100px;
+    width: max-content;
     line-height: 75px;
   }
   .letsTalkContainer > p {

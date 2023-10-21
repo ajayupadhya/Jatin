@@ -212,7 +212,7 @@ body {
     --medium-font-size: 30px;
     --normal-font-size: 16px;
     --special-thanks: 14px;
-    --small-font-size: 12px;
+    --small-font-size: 14px;
     --smallest-font: 10px;
     --padding: 158px;
   }
@@ -225,8 +225,11 @@ body {
   :root {
     --normal-font-size: 12px;
     --big-font-size: 80px;
-    --medium-font-size: 14px;
-    --small-font-size: 64px;
+    --medium-font-size: 24px;
+    --small-font-size: 14px;
+    --smallest-font: 12px;
+    --special-thanks: 14px;
+    --padding: 140px;
   }
   .app_container {
     padding: 0px 20px;
@@ -238,8 +241,11 @@ body {
   :root {
     --normal-font-size: 12px;
     --big-font-size: 56px;
-    --medium-font-size: 14px;
-    --small-font-size: 24px;
+    --medium-font-size: 24px;
+    --small-font-size: 14px;
+    --smallest-font: 12px;
+    --special-thanks: 14px;
+    --padding: 140px;
   }
   .app_container {
     padding: 0px 20px;

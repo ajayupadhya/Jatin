@@ -60,6 +60,9 @@
     padding: 14px 20px;
     margin: auto;
     justify-self: flex-start;
+    position: absolute;
+    top: 0;
+    z-index: 10;
   }
   /* .header_container_left_mobile > a {
     display: flex;
@@ -141,12 +144,6 @@
     text-transform: capitalize;
   }
 
-  .drawerOpen_mobile_text_container > li > a:hover {
-    text-decoration-line: line-through;
-    color: #fff;
-    font-weight: 300;
-    font-style: italic;
-  }
 
   .drawerOpenFooter {
     display: flex;
@@ -155,5 +152,7 @@
     justify-self: flex-end;
     width: 100%;
     padding: 63px 20px;
+    position: absolute;
+    bottom: 0;
   }
 }
