@@ -52,3 +52,10 @@
     width: max-content;
  
 } */
+
+
+@media screen and (max-width: 600px) {
+  .serviceContainerData > div > p {
+    font-size: 24px !important;
+  }
+}
