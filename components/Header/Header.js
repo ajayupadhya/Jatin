@@ -27,6 +27,13 @@ const Header = () => {
     }
   };
 
+
+  useEffect(() => {
+    if(window.location.pathname.includes("projects")) setLogoChange(2)
+
+  }, [])
+  
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
