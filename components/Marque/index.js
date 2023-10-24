@@ -15,7 +15,7 @@ function MarqueeSection() {
 
       <div className={styles.marquee_section_container_desktop}>
         <div className={styles.line1}>
-          <Marquee autoFill pauseOnHover speed={200} loop={0}>
+          <Marquee autoFill  speed={80} loop={0}>
             <div className={styles.marquee_text_wrapper_1}>
               <p className={tan_pearl.className}>
                 UNICORN
@@ -104,7 +104,7 @@ function MarqueeSection() {
         </div>
 
         <div className={styles.line1}>
-          <Marquee autoFill pauseOnHover speed={200} loop={0} direction="right">
+          <Marquee autoFill  speed={80} loop={0} direction="right">
             <div className={styles.marquee_text_wrapper_2}>
               <p className={tan_pearl.className}>
                 UNICORN
@@ -194,7 +194,7 @@ function MarqueeSection() {
         </div>
 
         <div className={styles.line1}>
-          <Marquee autoFill pauseOnHover speed={200} loop={0}>
+          <Marquee autoFill  speed={80} loop={0}>
             <div className={styles.marquee_text_wrapper_3}>
               <p className={tan_pearl.className}>
                 UNICORN
@@ -283,7 +283,7 @@ function MarqueeSection() {
         </div>
 
         <div className={styles.line1}>
-          <Marquee autoFill pauseOnHover speed={200} loop={0} direction="right">
+          <Marquee autoFill  speed={80} loop={0} direction="right">
             <div className={styles.marquee_text_wrapper_1}>
               <p className={tan_pearl.className}>
                 UNICORN

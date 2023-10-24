@@ -13,7 +13,7 @@
   color: var(--font-color-theme-dark);
   font-size: var(--small-font-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
   line-height: normal;
   margin-bottom: 60px;
 }
@@ -43,7 +43,7 @@
 .marquee_text_wrapper_3 > p {
   color: #F0F0F0;
   font-size: var(--medium-font-size);
-  font-weight: 400;
+  font-weight: 100;
   line-height: normal;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@
     color: var(--font-color-theme-dark);
     font-size: var(--small-font-size);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 40px;
   }

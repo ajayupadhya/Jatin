@@ -20,7 +20,7 @@
 
   .header_container_left > a > p {
     font-size: var(--smallest-font);
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: normal;
   }
@@ -41,7 +41,7 @@
   .header_container_right > ul > li  {
     text-transform: uppercase;
     font-size: var(--smallest-font);
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
   }
   
@@ -73,7 +73,7 @@
   } */
   .header_container_left_mobile > a > p {
     font-size: var(--normal-font-size);
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 16px;
   }

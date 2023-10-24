@@ -14,7 +14,7 @@
       color: var(--font-color-theme-dark);
       font-size: var(--small-font-size);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       line-height: normal;
     }
     .clientContainer {
@@ -126,7 +126,7 @@
       color: var(--font-color-theme-dark);
       font-size: var(--normal-font-size);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       line-height: normal;
     }
   
@@ -204,7 +204,7 @@
       color: var(--font-color-theme-dark);
       font-size: var(--normal-font-size);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       line-height: normal;
     }
   

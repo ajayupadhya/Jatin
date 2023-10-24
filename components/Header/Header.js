@@ -57,8 +57,8 @@ const Header = () => {
           <nav className={styles.header_container}>
             <div className={styles.header_container_left}>
               <Link href="/" passHref>
-                <p>Jatin Sharma</p>
-                <p>.Design</p>
+                <p>Jatin</p>
+                <p>Sharma</p>
               </Link>
             </div>
 
@@ -104,8 +104,8 @@ const Header = () => {
       <nav className={styles.header_container_mobile}>
         <div className={styles.header_container_left_mobile}>
           <Link href="/" passHref>
-            <p>Jatin Sharma</p>
-            <p>.Design</p>
+            <p>Jatin</p>
+            <p>Sharma</p>
           </Link>
         </div>
 

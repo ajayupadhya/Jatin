@@ -105,7 +105,7 @@
   color: var(--font-color-theme-dark);
   font-size: var(--medium-font-size);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 54px;
   text-transform: uppercase;
   width: max-content;
@@ -141,7 +141,7 @@
   width: 100vw;
   /* height: 100vh; */
   margin-top: -44px;
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  /* background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%); */
 }
 
 .mainBannerContainer {
@@ -208,14 +208,14 @@
 .mainBannerTextLower > div > p {
   font-size: var(--small-font-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .mainBannerImage {
   position: absolute;
-  right: 0;
+  right: 80px;
   top: 0;
   z-index: -1;
   width: 100%;

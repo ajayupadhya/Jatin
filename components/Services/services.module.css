@@ -18,7 +18,7 @@
   color: var(--font-color-theme-dark);
   font-size: var(--small-font-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
   line-height: normal;
 }
 
@@ -33,15 +33,15 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: calc(var(--big-font-size) / 2);
+  margin-top: 40px;
   flex-wrap: wrap;
-  gap: var(--medium-font-size) calc(var(--small-font-size) * 4);
+  gap: 60px;
 }
 
 .serviceContainerData > div > p {
   color: var(--font-color-theme-dark);
 
-  font-size: 64px;
+  font-size: var(--medium-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 64px;

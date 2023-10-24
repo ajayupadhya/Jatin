@@ -14,12 +14,13 @@
   background-color: transparent;
 }
 
-.link_button >p {
-font-size: var(--small-font-size);
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: capitalize;
+.link_button > p {
+  font-size: var(--small-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  width: max-content !important;
 }
 
 .link_button:hover:after {
@@ -37,12 +38,10 @@ text-transform: capitalize;
   border-radius: 10px;
 }
 
-
 @media screen and (max-width: 600px) {
   .link_button {
     display: flex;
     width: 150px;
-   
   }
   .link_button::after {
     content: "";

@@ -6,7 +6,7 @@ import { raleway_display } from "@/app/fonts";
 const Button = ({ text, link, className }) => {
   return (
     <Link href={link} className={`${style.link_button} ${className}`}>
-       <p className={raleway_display.className}>{text}</p>
+       <p className={raleway_display.className}>{text?.toUpperCase()}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="19"

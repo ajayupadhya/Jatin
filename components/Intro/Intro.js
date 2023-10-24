@@ -13,7 +13,7 @@ const Intro = () => {
       </Link>
       <div className={styles.IntroContainerHeader}>
         <p className={styles.IntroContainerAbout}>
-          A New Delhi-based digital designer with 7+ years of experience
+          New Delhi-based digital designer with 7+ years of experience
           crafting technology solutions for businesses of all sizes.
         </p>
         <div className={styles.IntroContainerAbout}>
