@@ -72,19 +72,37 @@ const Projects = () => {
       <Breadcrumb
         text={"Decoras Furniture"}
         link={"/projects/decoras-furniture"}
-        main = {"Works"}
+        main={"Works"}
       />
 
       <SingleProject item={data[0]} index={0} all={3} />
 
-      <div className={styles.overview_container}>
-        <h2>OVERVIEW</h2>
-        <p className={raleway_display.className}>
-          Decoras is a state-of-the-art home decor brand built on the pillars of
-          luxury, élan, elegance and class. Our products enchant for their
-          sobriety, to last for generations, faithful to the shapes of each
-          period, with a touch of the present.
-        </p>
+      <div className={styles.content_container}>
+        <div className={styles.overview_container}>
+          <h2>CHALLENGE</h2>
+          <p className={raleway_display.className}>
+            Decoras is a cradle-to-run project that I have worked on. The
+            project requirement was to lay the foundation of a world-class decor
+            brand that resonates with the upscale clientele of the USA market.
+            To understand the needs better, I conducted market research and
+            stakeholder interviews to understand the user needs and business
+            goals. After collecting data from the research and interview, I
+            established the functional and content requirements for the MVP.
+          </p>
+        </div>
+
+        <div className={styles.overview_container}>
+          <h2>APPROACH</h2>
+          <p className={raleway_display.className}>
+            Decoras is a cradle-to-run project that I have worked on. The
+            project requirement was to lay the foundation of a world-class decor
+            brand that resonates with the upscale clientele of the USA market.
+            To understand the needs better, I conducted market research and
+            stakeholder interviews to understand the user needs and business
+            goals. After collecting data from the research and interview, I
+            established the functional and content requirements for the MVP.
+          </p>
+        </div>
       </div>
 
       <div className={styles.middle__section__container}>
@@ -177,7 +195,7 @@ const Projects = () => {
         <div className={styles.next_page_bred}>
           <p className={raleway_display.className}> {"/*"} NEXT WORK</p>
         </div>
-        <SingleProject item={data[1]} index={1} all={3} next = {true}/>
+        <SingleProject item={data[1]} index={1} all={3} next={true} />
       </div>
     </div>
   );

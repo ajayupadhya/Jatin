@@ -1,19 +1,27 @@
 /* overview section  */
-
-.overview_container {
+.content_container{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 120px auto;
+  gap: 50px;
+}
+.overview_container {
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin: 120px auto;
+width: 50%;
+  gap: 20px;
 }
 
 .overview_container > h2 {
   color: #f0f0f0;
   text-align: center;
 
-  font-size: var(--normal-font-size);
+  font-size: var(--medium-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 64px; /* 266.667% */
@@ -21,7 +29,7 @@
 
 .overview_container > p {
   color: #f0f0f0;
-  text-align: center;
+  text-align: left;
   font-size: var(--small-font-size);
   font-style: normal;
   font-weight: 500;
