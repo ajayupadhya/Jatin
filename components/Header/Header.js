@@ -4,12 +4,15 @@ import styles from "./header.module.css";
 import Link from "next/link";
 import { raleway_display } from "@/app/fonts";
 import HeaderWorks from "./HeaderWorks";
+import { useRouter } from "next/navigation";
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
   const [logoChange, setLogoChange] = useState(1);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(50);
   const [openWorks, setOpenWorks] = useState(false);
+
+  const router = useRouter();
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -27,12 +30,10 @@ const Header = () => {
     }
   };
 
-
   useEffect(() => {
-    if(window.location.pathname.includes("projects")) setLogoChange(2)
-
-  }, [])
-  
+    if (window.location.pathname.includes("projects")) setLogoChange(2);
+    else setLogoChange(1);
+  }, [router, logoChange]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -46,9 +47,14 @@ const Header = () => {
   }, [lastScrollY]);
 
   const handleClickScroll = (val, scrollVal, clicked) => {
+    if (window.location.pathname.includes("projects") && clicked === 1) {
+      router.push("/");
+    }
     setLogoChange(clicked);
     window.scrollTo(0, window.innerHeight * val + scrollVal);
   };
+
+  console.log(logoChange);
 
   return (
     <>
@@ -76,7 +82,7 @@ const Header = () => {
                 </li>
 
                 <li
-                  onClick={() => setOpenWorks(true)}
+                  onClick={() => router.push("/projects")}
                   style={
                     logoChange === 2
                       ? { textDecoration: "underline", textUnderlineOffset: 5 }

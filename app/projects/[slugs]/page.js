@@ -72,6 +72,7 @@ const Projects = () => {
       <Breadcrumb
         text={"Decoras Furniture"}
         link={"/projects/decoras-furniture"}
+        main = {"Works"}
       />
 
       <SingleProject item={data[0]} index={0} all={3} />

@@ -8,7 +8,7 @@ import {
   LetsTalk,
   Services,
   Marque,
-  Testimonial,
+  // Testimonial,
 } from "../components";
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
         <Intro />
         <Marque />
         <Services />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <LetsTalk />
       </div>
     </>
