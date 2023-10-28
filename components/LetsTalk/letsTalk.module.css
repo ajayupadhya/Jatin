@@ -1,18 +1,20 @@
 .letsTalkContainer {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  padding-bottom: var(--padding);
-  gap: calc(var(--big-font-size) / 2);
-  gap: 80px;
+  margin-bottom: var(--padding);
+  gap: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 180px 0px;
 }
 
 .letsTalkContainer > h4 {
   font-size: var(--big-font-size);
   font-weight: 400;
   line-height: normal;
-  max-width: 620px;
 }
 
 .letsTalkContainer > div {
@@ -28,7 +30,7 @@
 
 .letsTalkContainer p {
   font-size: var(--small-font-size);
-  text-align: left;
+  text-align: center;
   width: 100%;
   line-height: 24px;
 }

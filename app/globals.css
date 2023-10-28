@@ -178,7 +178,7 @@ body {
 
 @media screen and (max-width: 1600px) and (min-width: 1248px) {
   :root {
-    --big-font-size: 140px;
+    --big-font-size: 120px;
     --medium-font-size: 40px;
     --normal-font-size: 24px;
     --special-thanks: 20px;

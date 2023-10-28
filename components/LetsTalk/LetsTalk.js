@@ -7,14 +7,12 @@ import Button from "../common/Button/smallButton";
 const LetsTalk = () => {
   return (
     <div className={styles.letsTalkContainer}>
+      <p className={raleway_display.className}>Got a project in mind?</p>
       <h4>Let&#39;s talk</h4>
-      <div>
-        <p className={raleway_display.className}>
-          From a simple idea on paper to a complex business problem, I can help
-          your business take that big leap!
-        </p>
+     
+       
         <Button text={"Email Me"} link={"/"}/>
-      </div>
+    
     </div>
   );
 };
