@@ -56,6 +56,17 @@
 
 
 @media screen and (max-width: 600px) {
+
+
+  .serviceContainerData > div{
+width: fit-content;
+margin: 0px;
+gap: 0px;
+  }
+
+  .serviceContainerData > div svg{
+    display: none;
+  }
   .serviceContainerData > div > p {
     font-size: 24px !important;
   }

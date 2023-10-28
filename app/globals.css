@@ -224,7 +224,7 @@ body {
 @media screen and (max-width: 600px) and (min-width: 400px) {
   :root {
     --normal-font-size: 12px;
-    --big-font-size: 80px;
+    --big-font-size: 40px;
     --medium-font-size: 24px;
     --small-font-size: 14px;
     --smallest-font: 12px;
@@ -240,7 +240,7 @@ body {
 @media screen and (max-width: 400px) {
   :root {
     --normal-font-size: 12px;
-    --big-font-size: 56px;
+    --big-font-size: 40px;
     --medium-font-size: 24px;
     --small-font-size: 14px;
     --smallest-font: 12px;
