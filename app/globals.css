@@ -176,6 +176,17 @@ body {
   width: 100%;
 }
 
+
+
+:root {
+	--d: 10s;
+	--angle: 120deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #fff;
+	--c2: rgba(255, 255, 255, 0.20);
+}
+
 @media screen and (max-width: 1600px) and (min-width: 1248px) {
   :root {
     --big-font-size: 120px;
@@ -268,3 +279,5 @@ body {
   background: #fff;
   width: 15%;
 }
+
+

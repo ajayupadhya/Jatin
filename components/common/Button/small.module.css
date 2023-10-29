@@ -23,6 +23,18 @@
   width: max-content !important;
 }
 
+.link_button:hover {
+  background-color: #f0f0f0;
+}
+
+.link_button p:hover {
+  color: black;
+}
+
+
+.link_button svg:hover{
+  stroke: black;
+} 
 .link_button:hover:after {
   content: "";
   display: block;
@@ -36,6 +48,8 @@
   border-left: 1px #fff solid;
   border-bottom: 1px #fff solid;
   border-radius: 10px;
+
+  color: black;
 }
 
 @media screen and (max-width: 600px) {

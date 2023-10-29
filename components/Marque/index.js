@@ -15,7 +15,7 @@ function MarqueeSection() {
 
       <div className={styles.marquee_section_container_desktop}>
         <div className={styles.line1}>
-          <Marquee autoFill  speed={80} loop={0}>
+          <Marquee autoFill  speed={60} loop={0}>
             <div className={styles.marquee_text_wrapper_1}>
               <p className={tan_pearl.className}>
                 UNICORN
@@ -284,7 +284,7 @@ function MarqueeSection() {
 
         <div className={styles.line1}>
           <Marquee autoFill  speed={80} loop={0} direction="right">
-            <div className={styles.marquee_text_wrapper_1}>
+            <div className={styles.marquee_text_wrapper_2}>
               <p className={tan_pearl.className}>
                 UNICORN
                 <FaAsterisk

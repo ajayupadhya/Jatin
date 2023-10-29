@@ -152,7 +152,7 @@
   height: 100%;
   max-width: 1440px;
   position: relative;
-  padding: var(--padding) 80px;
+  padding: 130px 80px;
   flex-direction: column;
 }
 
@@ -219,7 +219,7 @@
   top: 0;
   z-index: -1;
   width: 100%;
-  max-width: 434.459px;
+  max-width: 400px;
   height: 100%;
   max-height: 618px;
   flex-shrink: 0;

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import DecorasDesktop from "../../Images/clients/decorasDesktop.png";
+import DubDub from "../../Images/clients/cover.png"
+import Deyor from "../../Images/clients/cover (4).png"
+import DecorasDesktop from "../../Images/clients/cover (2).png";
 import DecorasMobile from "../../Images/clients/decorasMobile.png";
-import BaziDesktop from "../../Images/clients/bazziDesktop.png";
+import BaziDesktop from "../../Images/clients/cover (1).png";
 import BaziMobile from "../../Images/clients/baziMobile.png";
-import TaxilaDesktop from "../../Images/clients/taxilaDesktop.png";
+import TaxilaDesktop from "../../Images/clients/cover (3).png";
 import TaxilaMobile from "../../Images/clients/taxilaMobile.png";
 import Link from "next/link";
 import Button from "../common/Button/smallButton";
@@ -13,13 +15,13 @@ import { raleway_display } from "@/app/fonts";
 const Clients = () => {
   const data = [
     {
-      title: "Decoras Furniture",
-      client: "DECORASUSA.COM",
-      timeline: "2021",
-      role: "Website Design",
-      image: DecorasDesktop,
-      imageMobile: DecorasMobile,
-      link: "/projects/decoras-furniture",
+      title: "Dubdub.ai",
+      client: "https://www.dubdub.ai/",
+      timeline: "2023",
+      role: "UI UX • WEBSITE",
+      image: DubDub,
+      imageMobile: DubDub,
+      link: "/projects/dubdub",
     },
     {
       title: "Baazi Games",
@@ -31,11 +33,30 @@ const Clients = () => {
       link: "/projects/baaji-games",
     },
     {
+      title: "Decoras",
+      client: "DECORASUSA.COM",
+      timeline: "2021",
+      role: "Website Design",
+      image: DecorasDesktop,
+      imageMobile: DecorasMobile,
+      link: "/projects/decoras-furniture",
+    },
+  
+    {
       title: "Taxila Stone",
       client: "TAXILASTONE.COM",
       timeline: "2021",
       role: "BRANDING, UX/UI, DEV",
       image: TaxilaDesktop,
+      imageMobile: TaxilaMobile,
+      link: "/projects/taxila-stone",
+    },
+    {
+      title: "Deyor camps",
+      client: "https://www.deyorcamps.com/",
+      timeline: "2021",
+      role: "BRANDING, UX/UI, DEV",
+      image: Deyor,
       imageMobile: TaxilaMobile,
       link: "/projects/taxila-stone",
     },
@@ -45,7 +66,7 @@ const Clients = () => {
       <div className={style.clientContainer}>
         <div className={style.ClientContainerHeader} id="works">
           <Link href={"/"} className={raleway_display.className}>
-            {"/*"} WORKS
+            {"/*"} SELECTED WORKS
           </Link>
         </div>
         {data.map((item, index) => {
@@ -62,7 +83,7 @@ const Clients = () => {
                   <h4>{item.title}</h4>
                   <p className={raleway_display.className}>
                     {" "}
-                    Website Design : {item.timeline}
+                    {item.role} : {item.timeline}
                   </p>
                 </div>
 
