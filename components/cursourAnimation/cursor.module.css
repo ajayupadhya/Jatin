@@ -1,0 +1,96 @@
+.cursor {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 100000;
+}
+
+.cursorBackDrop {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  background-image: linear-gradient(45deg, #ab49de, #5b41f2);
+  border-radius: 38% 62% 55% 45%/32% 53% 47% 68%;
+  animation: wave 3s linear infinite;
+}
+
+@keyframes wave {
+  20% {
+    border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+  }
+  40% {
+    border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+  }
+  60% {
+    border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+  }
+  80% {
+    border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;
+  }
+}
+
+.normalCursor {
+  position: relative;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cursor_left {
+  left: 14px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(0deg);
+  width: 0.5rem;
+  height: 0.2rem;
+}
+.cursor_bottom {
+  bottom: 14px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg);
+  width: 0.5rem;
+  height: 0.2rem;
+}
+.cursor_right {
+  right: 14px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(0deg);
+  width: 0.5rem;
+  height: 0.2rem;
+}
+.cursor_top {
+  top: 14px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg);
+  width: 0.5rem;
+  height: 0.2rem;
+}
+
+.hoverOnImage {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+}

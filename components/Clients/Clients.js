@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import DubDub from "../../Images/clients/cover.png"
-import Deyor from "../../Images/clients/cover (4).png"
+import DubDub from "../../Images/clients/cover.png";
+import Deyor from "../../Images/clients/cover (4).png";
 import DecorasDesktop from "../../Images/clients/cover (2).png";
 import DecorasMobile from "../../Images/clients/decorasMobile.png";
 import BaziDesktop from "../../Images/clients/cover (1).png";
@@ -12,7 +12,9 @@ import Link from "next/link";
 import Button from "../common/Button/smallButton";
 import style from "./clients.module.css";
 import { raleway_display } from "@/app/fonts";
+import { UseCursorHandlers } from "../cursourAnimation/cursorHandler";
 const Clients = () => {
+  const cursorHandlers = UseCursorHandlers();
   const data = [
     {
       title: "Dubdub.ai",
@@ -41,7 +43,7 @@ const Clients = () => {
       imageMobile: DecorasMobile,
       link: "/projects/decoras-furniture",
     },
-  
+
     {
       title: "Taxila Stone",
       client: "TAXILASTONE.COM",
@@ -72,7 +74,7 @@ const Clients = () => {
         {data.map((item, index) => {
           return (
             <div key={index} className={style.singleClient}>
-              <div className={style.singleClientImage}>
+              <div className={style.singleClientImage} {...cursorHandlers}>
                 <Image src={item.image} alt={item.image} />
               </div>
               <div className={style.singleClientText}>

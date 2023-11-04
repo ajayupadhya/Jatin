@@ -6,7 +6,9 @@ import Image from "next/image";
 import LoaderImage from "../../Images/indiaGate.svg";
 import { raleway_display } from "@/app/fonts";
 import Jatin from "../../Images/jatin.png";
+import { UseCursorHandlers } from "../cursourAnimation/cursorHandler";
 const LoadScreen = ({ loaderChange }) => {
+  const cursorHandlers = UseCursorHandlers();
   const [count, setCount] = useState(0);
   const [scale, setScale] = useState(1);
   const [rotate, setRotate] = useState(0);
@@ -100,7 +102,7 @@ const LoadScreen = ({ loaderChange }) => {
           <div className={styles.mainBannerTextContainer}>
             <Image src={LoaderImage} alt="india gate" />
 
-            <div className={styles.mainBannerTextLower}>
+            <div className={styles.mainBannerTextLower} {...cursorHandlers}>
               <p className={`${styles.text}`}>
                 {" "}
                 <span>DIGITAL</span>

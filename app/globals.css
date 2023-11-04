@@ -8,6 +8,7 @@
 }
 * {
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 html,
@@ -176,15 +177,13 @@ body {
   width: 100%;
 }
 
-
-
 :root {
-	--d: 10s;
-	--angle: 120deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: #fff;
-	--c2: rgba(255, 255, 255, 0.20);
+  --d: 10s;
+  --angle: 120deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: #fff;
+  --c2: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1248px) {
@@ -193,7 +192,7 @@ body {
     --medium-font-size: 40px;
     --normal-font-size: 24px;
     --special-thanks: 20px;
-    --small-font-size: 16.400px;
+    --small-font-size: 16.4px;
     --smallest-font: 14px;
     --padding: 228px;
   }

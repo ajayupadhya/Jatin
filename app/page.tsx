@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 import {
   Banner,
   Clients,
@@ -11,6 +11,8 @@ import {
   // Testimonial,
 } from "../components";
 
+import CursorContextProvider from "../components/cursourAnimation/cursorContext";
+import Cursor from "../components/cursourAnimation/cursor"
 export default function Home() {
   const [scrollTop, setScrollTop] = useState(0);
 
@@ -30,21 +32,24 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="progressMainWrapper">
-        <div
-          className="progressMainStyle"
-          style={{ width: `${scrollTop}%` }}
-        ></div>
-      </div>
-      <div className="app_container">
-        <Banner />
-        <Clients />
-        <Intro />
-        <Marque />
-        <Services />
-        {/* <Testimonial /> */}
-        <LetsTalk />
-      </div>
+       <CursorContextProvider>
+        <Cursor/>
+        <div className="progressMainWrapper">
+          <div
+            className="progressMainStyle"
+            style={{ width: `${scrollTop}%` }}
+          ></div>
+        </div>
+        <div className="app_container">
+          <Banner />
+          <Clients />
+          <Intro />
+          <Marque />
+          <Services />
+          {/* <Testimonial /> */}
+          <LetsTalk />
+        </div>
+        </CursorContextProvider>
     </>
   );
 }
