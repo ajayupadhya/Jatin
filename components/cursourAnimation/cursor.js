@@ -9,25 +9,27 @@ const Cursor = () => {
   const [cursor] = useContext(CursorContext);
   const [isVisible, setIsVisible] = useState(false);
 
-  const isTouchDevice =
-    "ontouchstart" in window ||
-    navigator.MaxTouchPoints > 0 ||
-    navigator.msMaxTouchPoints > 0;
+  // const isTouchDevice =
+  //   "ontouchstart" in window ||
+  //   navigator.MaxTouchPoints > 0 ||
+  //   navigator.msMaxTouchPoints > 0;
 
   useEffect(() => {
+    // if (isTouchDevice) {
+    //   return null;
+    // } else {
     const handleMouseEnter = () => setIsVisible(true);
     const handleMouseLeave = () => setIsVisible(false);
+
     document.body.addEventListener("mouseenter", handleMouseEnter);
     document.body.addEventListener("mouseleave", handleMouseLeave);
+
     return () => {
       document.body.removeEventListener("mouseenter", handleMouseEnter);
       document.body.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
-  if (isTouchDevice) {
-    return null;
-  }
   return (
     <div className={styles.cursor}>
       {/* {cursor.active ? (
@@ -46,9 +48,9 @@ const Cursor = () => {
           left: clientX,
           top: clientY,
           transform: `translate(-50%, -50%) scale(${cursor.active ? 1.5 : 1})`,
-          transition:"transform .2s",
+          transition: "transform .2s",
           opacity: isVisible && clientX > 1 ? 1 : 0,
-          background: cursor.active ? "#fff" : "transparent"
+          background: cursor.active ? "#fff" : "transparent",
         }}
         className={styles.cursorBackDrop}
       >
