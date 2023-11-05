@@ -1,52 +1,80 @@
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+
+
+
+
 .letsTalkContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: var(--padding);
   gap: 20px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 180px 0px;
 
-  border-image: radial-gradient(
-			ellipse at var(--gradX) var(--gradY),
-			var(--c1),
-			var(--c1) 10%,
-			var(--c2) 40%
-		)
-		30;
-	animation: borderRadial var(--d) linear infinite forwards;
+  position: relative;
+
+
+
+  z-index: 0;
+  width: 100%;
+  height: auto;
+
+  overflow: hidden;
+
+  
+
+
 }
 
 
-@keyframes borderRadial {
-  0% {
-    --gradX: 0%;
-    --gradY: 0%;
-  }
-  20% {
-    --gradX: 100%;
-    --gradY: 50%;
-  }
-  40% {
-    --gradX: 100%;
-    --gradY: 100%;
-  }
-  60% {
-    --gradX: 50%;
-    --gradY: 100%;
-  }
-  80% {
-    --gradX: 0%;
-    --gradY: 50%;
-  }
-  100% {
-    --gradX: 50%;
-    --gradY: 0%;
-  }
+
+.letsTalkContainer::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: 10% 10%, 10% 10%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#e8e8e8, #4c4c4c), linear-gradient(#e8e8e8, #4c4c4c), linear-gradient(#e8e8e8, #4c4c4c), linear-gradient(#e8e8e8, #4c4c4c);
+  -webkit-animation: rotate 4s linear infinite;
+          animation: rotate 4s linear infinite;
 }
+.letsTalkContainer::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #000;
+  border-radius: 5px;
+}
+
+
 
 .letsTalkContainer > h4 {
   font-size: var(--big-font-size);
@@ -73,15 +101,7 @@
   font-weight: 100;
 }
 
-/* .letsTalkContainer a {
 
-  width: 80%;
-  height: 56px;
-  max-width: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 @media screen and (max-width: 600px) {
   .letsTalkContainer {
@@ -99,23 +119,7 @@
   }
 }
 
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 90deg;
-  inherits: true;
-}
 
-@property --gradX {
-  syntax: "<percentage>";
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: "<percentage>";
-  initial-value: 0%;
-  inherits: true;
-}
 
 
 

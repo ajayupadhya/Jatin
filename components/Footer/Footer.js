@@ -14,11 +14,11 @@ const Footer = () => {
         <Link href={"/"} className={raleway_display.className}>RESUME</Link>
       </div>
       <div className={styles.footerLineSeparate}></div>
-      <div className={styles.footerContainerMiddle}>
+      {/* <div className={styles.footerContainerMiddle}>
         <p>
           Special thanks <span> DEVELOPER </span> for development
         </p>
-      </div>
+      </div> */}
       <div className={styles.footerLineSeparate}></div>
       <div className={styles.footerContainerBottom}>
         <p className={raleway_display.className}>JATIN SHARMA</p>

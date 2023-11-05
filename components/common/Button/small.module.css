@@ -21,20 +21,24 @@
   line-height: normal;
   text-transform: capitalize;
   width: max-content !important;
+  color: #fff;
 }
 
 .link_button:hover {
   background-color: #f0f0f0;
 }
 
-.link_button p:hover {
-  color: black;
+.link_button:hover > p {
+  color: #000;
 }
 
+.link_button svg {
+  stroke: #F0F0F0;
+}
 
-.link_button svg:hover{
+.link_button:hover > svg {
   stroke: black;
-} 
+}
 .link_button:hover:after {
   content: "";
   display: block;
@@ -48,8 +52,6 @@
   border-left: 1px #fff solid;
   border-bottom: 1px #fff solid;
   border-radius: 10px;
-
-  color: black;
 }
 
 @media screen and (max-width: 600px) {

@@ -11,14 +11,14 @@
 
 .cursorBackDrop {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-
+  border: 1px solid #fff;
 
   background-image: linear-gradient(45deg, #ab49de, #5b41f2);
   border-radius: 38% 62% 55% 45%/32% 53% 47% 68%;
@@ -40,17 +40,18 @@
   }
 }
 
-.normalCursor {
+/* .normalCursor {
   position: relative;
   background: transparent;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
+} */
 
 .cursor_left {
   left: 14px;

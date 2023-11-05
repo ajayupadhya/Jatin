@@ -102,14 +102,14 @@ const LoadScreen = ({ loaderChange }) => {
           <div className={styles.mainBannerTextContainer}>
             <Image src={LoaderImage} alt="india gate" />
 
-            <div className={styles.mainBannerTextLower} {...cursorHandlers}>
+            <div className={styles.mainBannerTextLower} >
               <p className={`${styles.text}`}>
                 {" "}
-                <span>DIGITAL</span>
+                <span {...cursorHandlers}>DIGITAL</span>
               </p>
               <p className={`${styles.text}`}>
                 {" "}
-                <span>DESIGNER</span>
+                <span {...cursorHandlers}>DESIGNER</span>
               </p>
               <div>
                 <p className={raleway_display.className}> NEW DELHI</p>
@@ -117,7 +117,7 @@ const LoadScreen = ({ loaderChange }) => {
               </div>
             </div>
           </div>
-          <div className={styles.mainBannerImage}>
+          <div className={styles.mainBannerImage} {...cursorHandlers}>
             <Image src={Jatin} alt="Jatin" />
           </div>
           <div className={styles.mainBannerDown} onClick={handleClickScroll}>
