@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
 import { raleway_display } from "@/app/fonts";
 import HeaderWorks from "./HeaderWorks";
 import { useRouter } from "next/navigation";
+import { CursorContext } from "../cursourAnimation/cursorContext";
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(true);
   const [logoChange, setLogoChange] = useState(1);
@@ -12,18 +13,20 @@ const Header = () => {
   const [lastScrollY, setLastScrollY] = useState(50);
   const [openWorks, setOpenWorks] = useState(false);
 
+  const [cursor, buttonHover, setCursor, setButtonHover] =
+    useContext(CursorContext);
+
   const router = useRouter();
 
   const controlNavbar = useCallback(() => {
     if (typeof window !== "undefined") {
-      const head = document.getElementById("headerScroll")
+      const head = document.getElementById("headerScroll");
       if (window.scrollY > lastScrollY) {
-        head.style.transform = "translateY(-100%)"
-        head.style.transition =  "transform .5s ease-in-out" 
-        
+        head.style.transform = "translateY(-100%)";
+        head.style.transition = "transform .5s ease-in-out";
       } else {
-        head.style.transform = "translate(0%)"
-        head.style.transition =  "transform .5s ease-in-out" 
+        head.style.transform = "translate(0%)";
+        head.style.transition = "transform .5s ease-in-out";
       }
 
       // remember current page location to use in the next move
@@ -34,7 +37,7 @@ const Header = () => {
   useEffect(() => {
     if (window.location.pathname.includes("projects")) setLogoChange(2);
     else setLogoChange(1);
-  }, [router, logoChange]);
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -67,33 +70,42 @@ const Header = () => {
           <div className={styles.header_container_right}>
             <ul>
               <li
+                className={logoChange === 1 ? null : styles.hoverOnLink}
                 onClick={() => handleClickScroll(0, 0, 1)}
                 style={
                   logoChange === 1
                     ? { textDecoration: "underline", textUnderlineOffset: 5 }
                     : { textDecoration: "none", opacity: 0.5 }
                 }
+                onMouseEnter={() => setButtonHover(true)}
+                onMouseLeave={() => setButtonHover(false)}
               >
                 Home
               </li>
 
               <li
+                className={logoChange === 2 ? null : styles.hoverOnLink}
                 onClick={() => router.push("/projects")}
                 style={
                   logoChange === 2
                     ? { textDecoration: "underline", textUnderlineOffset: 5 }
                     : { textDecoration: "none", opacity: 0.5 }
                 }
+                onMouseEnter={() => setButtonHover(true)}
+                onMouseLeave={() => setButtonHover(false)}
               >
                 Works
               </li>
               <li
+                className={logoChange === 3 ? null : styles.hoverOnLink}
                 onClick={() => handleClickScroll(5, 230, 3)}
                 style={
                   logoChange === 3
                     ? { textDecoration: "underline", textUnderlineOffset: 5 }
                     : { textDecoration: "none", opacity: 0.5 }
                 }
+                onMouseEnter={() => setButtonHover(true)}
+                onMouseLeave={() => setButtonHover(false)}
               >
                 Contact
               </li>

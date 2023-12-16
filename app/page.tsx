@@ -12,7 +12,7 @@ import {
 } from "../components";
 
 import CursorContextProvider from "../components/cursourAnimation/cursorContext";
-import Cursor from "../components/cursourAnimation/cursor"
+import Cursor from "../components/cursourAnimation/cursor";
 export default function Home() {
   const [scrollTop, setScrollTop] = useState(0);
 
@@ -32,24 +32,22 @@ export default function Home() {
   }, []);
   return (
     <>
-       <CursorContextProvider>
-        <Cursor/>
-        <div className="progressMainWrapper">
-          <div
-            className="progressMainStyle"
-            style={{ width: `${scrollTop}%` }}
-          ></div>
-        </div>
-        <div className="app_container">
-          <Banner />
-          <Clients />
-          <Intro />
-          <Marque />
-          <Services />
-          {/* <Testimonial /> */}
-          <LetsTalk />
-        </div>
-        </CursorContextProvider>
+      <Cursor />
+      <div className="progressMainWrapper">
+        <div
+          className="progressMainStyle"
+          style={{ width: `${scrollTop}%` }}
+        ></div>
+      </div>
+      <div className="app_container">
+        <Banner />
+        <Clients />
+        <Intro />
+        <Marque />
+        <Services />
+        {/* <Testimonial /> */}
+        <LetsTalk />
+      </div>
     </>
   );
 }

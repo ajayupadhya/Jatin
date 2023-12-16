@@ -38,14 +38,16 @@
     text-decoration: none;
   }
 
-  .header_container_right > ul > li  {
+  .header_container_right > ul > li {
     text-transform: uppercase;
     font-size: var(--smallest-font);
     font-weight: 400;
-    cursor: pointer;
+    cursor: pointer !important;
+    padding: 20px;
   }
-  
- 
+  .hoverOnLink:hover {
+    opacity: 1 !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -143,7 +145,6 @@
     line-height: 54px; /* 96.429% */
     text-transform: capitalize;
   }
-
 
   .drawerOpenFooter {
     display: flex;
