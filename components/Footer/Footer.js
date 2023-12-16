@@ -21,8 +21,8 @@ const Footer = () => {
       </div> */}
       <div className={styles.footerLineSeparate}></div>
       <div className={styles.footerContainerBottom}>
-        <p className={raleway_display.className}>JATIN SHARMA</p>
-        <p className={raleway_display.className}>All rights reserved 2023</p>
+        <p className={raleway_display.className}>JATIN SHARMA    All rights reserved 2023 </p>
+        {/* <p className={raleway_display.className}>All rights reserved 2023</p> */}
       </div>
     </footer>
   );

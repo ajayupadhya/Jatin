@@ -45,8 +45,9 @@ const Services = () => {
 
       <div className={styles.serviceContainerData}>
         <div>
-          <p>Product Design</p>
-          <p>Web Design</p>
+          <p>Website</p>
+          <p>Mobile Apps</p>
+          <p>Design Systems</p>
         </div>
         <div>
           <svg
@@ -63,10 +64,12 @@ const Services = () => {
             />
           </svg>
 
-          <p>Mobile Design</p>
-          <p>UX Strategy</p>
+          <p>Interaction Design</p>
+          <p>&</p>
+          <p>Animation</p>
         </div>
         <div>
+          <p>Art Direction</p>
           <p>Visual Design</p>
           <p>Brand Identity</p>
         </div>

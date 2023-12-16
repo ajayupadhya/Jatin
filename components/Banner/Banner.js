@@ -13,7 +13,6 @@ const LoadScreen = ({ loaderChange }) => {
   const [scale, setScale] = useState(1);
   const [rotate, setRotate] = useState(0);
 
-
   let time = new Date().toLocaleTimeString();
   const [ctime, setTime] = useState(time);
   const UpdateTime = () => {
@@ -21,10 +20,6 @@ const LoadScreen = ({ loaderChange }) => {
     setTime(time);
   };
   setInterval(UpdateTime);
-
- 
-
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,7 +59,7 @@ const LoadScreen = ({ loaderChange }) => {
 
   return (
     <>
-      {/* <div
+      <div
         className={`${styles.loaderScreen}  ${
           count === 100 && styles.animate_loader
         }`}
@@ -89,20 +84,35 @@ const LoadScreen = ({ loaderChange }) => {
               />
             </svg>
           </div>
+          {/* <div className={styles.LoaderImageContainer}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="#000"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M60 20L50 20L50 60L50 80L30 80L20 80L20 60L30 60L30 20L30 1.08876e-05L50 1.26361e-05L60 1.35103e-05L60 20ZM60 20L80 20L80 40L60 40L60 20ZM20 60L20 40L3.49691e-06 40L1.74846e-06 60L20 60Z"
+                fill="#fff"
+              />
+            </svg>
+          </div> */}
 
           <p>
             {count} <span className={raleway_display.className}> &#37;</span>
           </p>
         </div>
-      </div> */}
+      </div>
 
-     
       <div className={styles.mainBannerOuter}>
         <div className={styles.mainBannerContainer}>
           <div className={styles.mainBannerTextContainer}>
             <Image src={LoaderImage} alt="india gate" />
 
-            <div className={styles.mainBannerTextLower} >
+            <div className={styles.mainBannerTextLower}>
               <p className={`${styles.text}`}>
                 {" "}
                 <span {...cursorHandlers}>DIGITAL</span>

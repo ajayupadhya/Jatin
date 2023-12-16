@@ -19,7 +19,7 @@
   display: none;
 }
 
-.loaderBackground {
+/* .loaderBackground {
   background: linear-gradient(180deg, #f42513 0%, #000 100%);
   position: fixed;
   left: 0;
@@ -31,12 +31,12 @@
   animation-duration: 2.5s;
   animation-delay: 3s;
   z-index: 100;
-}
+} */
 .LoaderImageContainer {
   justify-content: flex-end;
   width: fit-content;
   animation: zoom-in, zoom-out;
-  animation-duration: 2.5s, 1.75s;
+  animation-duration: 2s, 1.75s;
   animation-delay: 0.5s, 2.5s;
 }
 
