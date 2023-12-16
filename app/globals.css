@@ -264,7 +264,7 @@ body {
 }
 
 .progressMainWrapper {
-  background-color: black;
+  background-color: transparent;
   height: 15px;
   position: sticky;
   top: 0;
@@ -279,4 +279,22 @@ body {
   width: 15%;
 }
 
+.cursor {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 100000;
+}
 
+.buttonHover:hover .cursor{
+  display: none;
+}
+
+
+.show-cursor {
+  cursor: auto !important;
+}

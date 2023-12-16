@@ -12,12 +12,14 @@
   position: relative;
   border-radius: 10px;
   background-color: transparent;
+
+  cursor: auto !important;
 }
 
 .link_button > p {
   font-size: var(--small-font-size);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: normal;
   text-transform: capitalize;
   width: max-content !important;
@@ -33,7 +35,7 @@
 }
 
 .link_button svg {
-  stroke: #F0F0F0;
+  stroke: #f0f0f0;
 }
 
 .link_button:hover > svg {

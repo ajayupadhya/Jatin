@@ -223,7 +223,22 @@
   height: 100%;
   max-height: 618px;
   flex-shrink: 0;
-  margin-top: calc(var(--padding));
+  margin-top: calc(var(--padding) - 50px);
+}
+
+@media screen and (min-width : 1248px) {
+  .mainBannerImage {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 618px;
+    flex-shrink: 0;
+    margin-top: calc(var(--padding) - 120px);
+  }
 }
 
 .mainBannerImage > img {

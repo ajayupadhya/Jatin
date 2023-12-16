@@ -1,8 +1,11 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React , {useEffect} from "react";
 import style from "./index.module.css";
+import { UseCursorHandlers } from "../../cursourAnimation/cursorHandler";
 const Button = ({ text, link }) => {
+
+
   return (
     <Link href={link} className={style.link_button}>
       <p>{text}</p>

@@ -1,12 +1,10 @@
 import { useContext, useCallback } from "react";
 import { CursorContext } from "./cursorContext";
 export const UseCursorHandlers = (options = {}) => {
-  const [cursor, buttonHover, setCursor, setButtonHover] =
-    useContext(CursorContext);
+  const [cursor, setCursor] = useContext(CursorContext);
   const toggleCursor = () => {
     setCursor({ active: !cursor.active });
   };
-
   const onMouseEnter = useCallback((event) => {
     if (options.onMouseEnter) {
       options.onMouseEnter(event);

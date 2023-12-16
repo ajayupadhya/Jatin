@@ -127,6 +127,7 @@ const Clients = () => {
                         <Button
                           link={item.link}
                           className={style.smallButtonLink}
+                      
                         >
                           <svg
                             width="25"

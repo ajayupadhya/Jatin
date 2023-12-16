@@ -1,11 +1,19 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import style from "./small.module.css";
 import { raleway_display } from "@/app/fonts";
+import { CursorContext } from "../../cursourAnimation/cursorContext";
 const Button = ({ text, link, className }) => {
+  const [cursor, buttonHover ,setCursor , setButtonHover] = useContext(CursorContext);
   return (
-    <Link href={link} className={`${style.link_button} ${className}`}>
+    <Link
+      href={link}
+      className={`buttonHover ${style.link_button} ${className}`}
+      id="buttonId"
+      onMouseEnter={() => setButtonHover(true)}
+      onMouseLeave={() => setButtonHover(false)}
+    >
       <p className={raleway_display.className}>{text?.toUpperCase()}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
