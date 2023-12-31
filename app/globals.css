@@ -264,19 +264,22 @@ body {
 }
 
 .progressMainWrapper {
-  background-color: transparent;
-  height: 15px;
-  position: sticky;
+  background-color: #fff;
+  height: 3px;
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1;
+  z-index: 1000;
+  transform-origin: left;
   width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
 }
 
-.progressMainStyle {
-  height: 4px;
-  background: #fff;
-  width: 15%;
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
 }
 
 .cursor {
@@ -290,10 +293,9 @@ body {
   z-index: 100000;
 }
 
-.buttonHover:hover .cursor{
+.buttonHover:hover .cursor {
   display: none;
 }
-
 
 .show-cursor {
   cursor: auto !important;
