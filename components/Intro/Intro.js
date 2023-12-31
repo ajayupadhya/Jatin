@@ -12,24 +12,30 @@ const Intro = () => {
         {"/*"} ABOUT
       </Link>
       <div className={styles.IntroContainerHeader}>
-        <p className={styles.IntroContainerAbout}>
-          New Delhi-based digital designer with 7+ years of experience
-          crafting technology solutions for businesses of all sizes.
+        <p>
+          <span>
+            New Delhi-based digital designer with 7+ years of experience
+            crafting technology solutions for businesses of all sizes.
+          </span>
         </p>
         <div className={styles.IntroContainerAbout}>
           <p className={raleway_display.className}>
-            As a designer, I advocate for user needs and set up collaborative
-            design strategies early on for growing businesses. While I am not
-            busy creating design strategies, conducting UX workshops,
-            brainstorming ideas, and white-boarding challenges. I love
-            traveling, trekking the Himalayas, motorcycle, making art, and
-            taking pictures.
+            <span>
+              As a designer, I advocate for user needs and set up collaborative
+              design strategies early on for growing businesses. While I am not
+              busy creating design strategies, conducting UX workshops,
+              brainstorming ideas, and white-boarding challenges. I love
+              traveling, trekking the Himalayas, motorcycle, making art, and
+              taking pictures.
+            </span>
           </p>
           <p className={raleway_display.className}>
-            Currently, I am a Product Designer at @POKERBAAZI, India’s biggest
-            poker platform. Building & setting up a design process for the poker
-            revolution in India. Feel free to connect with me for collaboration
-            and consultation.
+            <span>
+              Currently, I am a Product Designer at @POKERBAAZI, India’s biggest
+              poker platform. Building & setting up a design process for the
+              poker revolution in India. Feel free to connect with me for
+              collaboration and consultation.
+            </span>
           </p>
         </div>
       </div>

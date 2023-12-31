@@ -101,24 +101,27 @@
   }
   .clientContainerMobile {
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     gap: 40px;
-    margin-top: var(--padding)
+    margin-top: var(--padding);
+    position: relative;
+    /* border: 2px solid red; */
   }
 
   .work_count_mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .workDateMobile {
     margin-bottom: 20px;
     color: rgba(240, 240, 240, 0.6);
     size: 24px;
-    font-family: 'TAN-PEARL';
+    font-family: "TAN-PEARL";
     font-weight: 400;
   }
 
@@ -129,23 +132,35 @@
     font-weight: 400;
     line-height: normal;
   }
-
+  .horizontalSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
   .carousalContainer {
-    display: grid;
-    justify-content: center;
-    grid-auto-flow: row;
-    grid-auto-columns: 100%;
-    /* overflow-x: scroll; */
-    /* overflow-y: hidden; */
-    overscroll-behavior-inline: contain;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     gap: 20px;
-    scroll-snap-type: x mandatory;
     padding: 10px 0px;
+    flex-flow: row nowrap;
+    /* padding-bottom: 100px; */
+  }
+
+  .cardContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 20px;
   }
 
   .singleClientMobile {
     display: flex;
     width: 100%;
+    height: 100%;
     background-color: #000;
     flex-direction: column;
     scroll-snap-align: start;
@@ -154,7 +169,12 @@
     position: relative;
     padding: 20px;
     border-radius: 20px;
-    margin-bottom: 100px;
+   
+    /* margin-bottom: 100px; */
+  }
+
+  .singleClientMobile:nth-child(1) {
+    margin-left: 20px;
   }
 
   .singleClientTextMobile {
@@ -210,7 +230,7 @@
 
   .singleClientTextRoleTextMobile {
     font-size: 14px !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     color: rgb(255, 255, 255, 0.6) !important;
   }

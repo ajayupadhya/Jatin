@@ -34,6 +34,29 @@
   max-width: 620px;
 }
 
+.IntroContainerHeader span {
+  color: hsl(0 0% 100% /0.2);
+  background-clip: text;
+  background-image: linear-gradient(90deg, var(--font-color-theme-dark), var(--font-color-theme-dark));
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+  animation-range: contain;
+}
+
+.IntroContainerHeader > p > span {
+  animation-range-start: cover 15vh;
+  animation-range-end: cover 75vh;
+}
+
+
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
 .IntroContainerAbout {
   display: flex;
   align-items: center;
@@ -42,18 +65,22 @@
   width: 50%;
   gap: var(--medium-font-size);
 }
-.IntroContainerAbout > p:first-child {
+.IntroContainerAbout > p:first-child span{
   font-size: var(--small-font-size);
   font-style: normal;
   font-weight: 200;
   line-height: 20px; /* 142.857% */
+  animation-range-start: cover 15vh;
+  animation-range-end: cover 40vh;
 }
 
-.IntroContainerAbout > p:last-child {
+.IntroContainerAbout > p:last-child span{
   font-size: var(--small-font-size);
   font-style: normal;
   font-weight: 200;
   line-height: 24px; /* 150% */
+  animation-range-start: cover 20vh;
+  animation-range-end: cover 54.5vh;
 }
 
 .IntroContainerImage {
