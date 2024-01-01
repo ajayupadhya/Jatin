@@ -335,7 +335,9 @@
   .mainBannerImage {
     max-width: 210px;
     max-height: 500px;
-    top: 50px;
+    top: 100px;
+    right: 0px;
+    z-index: -1;
   }
 
   .mainBannerTextContainer > img {

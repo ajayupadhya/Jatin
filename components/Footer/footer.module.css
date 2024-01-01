@@ -110,4 +110,13 @@
   /* .footerContainerBottom > p {
     font-size: calc(var(--normal-font-size) - 2px);
   } */
+
+  .bottomToTop{
+    right: 10px;
+    bottom: 120px;
+  }
+  .mainBannerDown{
+    padding: 10px 5px;
+ 
+  }
 }
