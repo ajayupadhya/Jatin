@@ -284,26 +284,24 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100dvh;
+    height: 85lvh;
     margin-top: 0px;
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
   }
 
-  .mainBannerOuter {
-    height: 100dvh;
-  }
+
 
   .mainBannerContainer {
     width: 90%;
     overflow: visible;
-    height: 100dvh;
+    height: 100lvh;
     padding: 0px;
-    justify-content: center;
+   
   }
 
   .mainBannerTextContainer {
     gap: 1px;
-    margin-top: -180px;
+    margin-top: 25lvh;
   }
 
   .mainBannerTextUpper > img {
@@ -335,7 +333,7 @@
   .mainBannerImage {
     max-width: 210px;
     max-height: 500px;
-    top: 100px;
+    top: 31lvh;
     right: 0px;
     z-index: -1;
   }

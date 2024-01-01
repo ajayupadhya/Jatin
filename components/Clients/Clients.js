@@ -128,25 +128,26 @@ const Clients = () => {
                             </p>
                             <p></p>
                           </div>
-                          <div style={{ width: 60 }}>
-                            <Button
-                              link={item.link}
-                              className={style.smallButtonLink}
+                        </div>
+                        <div style={{ width: "100%" }}>
+                          <Button
+                            link={item.link}
+                            className={style.smallButtonLink}
+                            text={"View Case"}
+                          >
+                            <svg
+                              width="25"
+                              height="20"
+                              viewBox="0 0 25 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              <svg
-                                width="25"
-                                height="20"
-                                viewBox="0 0 25 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M15.1724 1C15.1724 1 15.9326 5.43128 17.7931 7.32813C19.6536 9.22497 24 10 24 10M24 10C24 10 19.6536 10.775 17.7931 12.6719C15.9326 14.5687 15.1724 19 15.1724 19M24 10L0 10"
-                                  stroke="#F0F0F0"
-                                />
-                              </svg>
-                            </Button>
-                          </div>
+                              <path
+                                d="M15.1724 1C15.1724 1 15.9326 5.43128 17.7931 7.32813C19.6536 9.22497 24 10 24 10M24 10C24 10 19.6536 10.775 17.7931 12.6719C15.9326 14.5687 15.1724 19 15.1724 19M24 10L0 10"
+                                stroke="#F0F0F0"
+                              />
+                            </svg>
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -156,25 +157,26 @@ const Clients = () => {
             </div>
           </HorizontalScroll>
         </div>
-
-        <Button
-          text="See All Works"
-          className={style.allWorkButton}
-          link={"/projects"}
-        >
-          <svg
-            width="25"
-            height="20"
-            viewBox="0 0 25 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className={style.mobileButtonContainer}>
+          <Button
+            text="See All Works"
+            className={style.allWorkButton}
+            link={"/projects"}
           >
-            <path
-              d="M15.1724 1C15.1724 1 15.9326 5.43128 17.7931 7.32813C19.6536 9.22497 24 10 24 10M24 10C24 10 19.6536 10.775 17.7931 12.6719C15.9326 14.5687 15.1724 19 15.1724 19M24 10L0 10"
-              stroke="#F0F0F0"
-            />
-          </svg>
-        </Button>
+            <svg
+              width="25"
+              height="20"
+              viewBox="0 0 25 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.1724 1C15.1724 1 15.9326 5.43128 17.7931 7.32813C19.6536 9.22497 24 10 24 10M24 10C24 10 19.6536 10.775 17.7931 12.6719C15.9326 14.5687 15.1724 19 15.1724 19M24 10L0 10"
+                stroke="#F0F0F0"
+              />
+            </svg>
+          </Button>
+        </div>
       </div>
     </>
   );
