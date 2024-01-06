@@ -109,12 +109,24 @@
     left: 10px;
     border-radius: 10px;
   }
+  .hamburger_two_fade {
+    width: 28px;
+    height: 3px;
+    background-color: var(--font-color-theme-dark);
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    transform: translateX(-100vw);
+    transition: transform 0.5s;
+  }
   .drawerOpen_mobile {
+    display: none;
+  }
+  .drawerOpen_mobile_slide {
     position: fixed;
-    left: 0;
-    right: 0;
+    top: 0px;
+    width: 100%;
     bottom: 0;
-    top: 0;
     background-color: #000;
     background-image: url(../../Images/backgroundImage.svg);
     z-index: 10;
@@ -122,6 +134,15 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    transform-origin: right;
+    transform: translateX(0);
+    animation: slide-left .5s forwards;
+  }
+
+  @keyframes slide-left {
+    to {
+      transform: translateX(-40vw);
+    }
   }
 
   .drawerOpen_mobile_text_container {

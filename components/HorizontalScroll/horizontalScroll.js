@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useLayoutEffect, useRef, useCallback } from "react";
 import styled from "styled-components";
 
 const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
@@ -39,12 +39,12 @@ const handleDynamicHeight = (ref, setDynamicHeight) => {
   setDynamicHeight(dynamicHeight);
 };
 
-const applyScrollListener = (ref, setTranslateX) => {
-  window.addEventListener("scroll", () => {
-    const offsetTop = -ref.current.offsetTop;
-    setTranslateX(offsetTop);
-  });
-};
+// const applyScrollListener = (ref, setTranslateX) => {
+//   window.addEventListener("scroll", () => {
+//     const offsetTop = -ref.current.offsetTop;
+//     setTranslateX(offsetTop);
+//   });
+// };
 
 const HorizontalScroll = ({ children }) => {
   const [dynamicHeight, setDynamicHeight] = useState(null);
@@ -53,15 +53,25 @@ const HorizontalScroll = ({ children }) => {
   const containerRef = useRef(null);
   const objectRef = useRef(null);
 
-  const resizeHandler = () => {
+  const resizeHandler = useCallback(() => {
     handleDynamicHeight(objectRef, setDynamicHeight);
-  };
+  }, []);
 
-  useEffect(() => {
+  const scrollHandler = useCallback(() => {
+    const offsetTop = -containerRef.current.offsetTop;
+    setTranslateX(offsetTop);
+  }, []);
+
+  useLayoutEffect(() => {
     handleDynamicHeight(objectRef, setDynamicHeight);
     window.addEventListener("resize", resizeHandler);
-    applyScrollListener(containerRef, setTranslateX);
-  }, []);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
+
+    return () => {
+      window.removeEventListener("resize", resizeHandler);
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, [resizeHandler, scrollHandler]);
 
   return (
     <TallOuterContainer dynamicHeight={dynamicHeight}>

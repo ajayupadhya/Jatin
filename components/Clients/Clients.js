@@ -109,9 +109,9 @@ const Clients = () => {
               {data.map((item, index) => {
                 return (
                   <div key={index} className={style.cardContainer}>
-                    <h2 className={style.workDateMobile}>
+                    {/* <h2 className={style.workDateMobile}>
                       0{index + 1} / 0{data?.length}
-                    </h2>
+                    </h2> */}
                     <div key={index} className={style.singleClientMobile}>
                       <div className={style.singleClientImageMobile}>
                         <Image src={item.image} alt={item.image} />
@@ -157,7 +157,7 @@ const Clients = () => {
             </div>
           </HorizontalScroll>
         </div>
-        <div className={style.mobileButtonContainer}>
+        {/* <div className={style.mobileButtonContainer}>
           <Button
             text="See All Works"
             className={style.allWorkButton}
@@ -176,7 +176,7 @@ const Clients = () => {
               />
             </svg>
           </Button>
-        </div>
+        </div> */}
       </div>
     </>
   );

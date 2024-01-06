@@ -123,24 +123,24 @@ const Header = () => {
         </div>
 
         <div className={styles.header_container_right_mobile}>
-          {drawerOpen ? (
+          {/* {drawerOpen ? ( */}
             <div
               className={styles.hamburger_container}
               onClick={() => setDrawerOpen((prev) => !prev)}
             >
               <div className={styles.hamburger_one}></div>
-              <div className={styles.hamburger_two}></div>
+              <div className={ styles.hamburger_two}></div>
             </div>
-          ) : (
-            <div className={styles.drawerOpen_mobile}>
+          {/* ) : ( */}
+            <div className={drawerOpen ?  styles.drawerOpen_mobile : styles.drawerOpen_mobile_slide }>
               <div
                 className={styles.header_container_mobile}
                 style={{ margin: 0 }}
               >
                 <div className={styles.header_container_left_mobile}>
                   <Link href="/" passHref>
-                    <p>Jatin Sharma</p>
-                    <p>.Design</p>
+                    <p>Jatin</p>
+                    <p>Sharma</p>
                   </Link>
                 </div>
 
@@ -149,7 +149,7 @@ const Header = () => {
                   onClick={() => setDrawerOpen((prev) => !prev)}
                 >
                   <div className={styles.hamburger_one}></div>
-                  {/* <div className={styles.hamburger_two}></div> */}
+                  {/* <div className={ drawerOpen ? styles.hamburger_two : styles.hamburger_two_fade}></div> */}
                 </div>
               </div>
 
@@ -222,7 +222,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-          )}
+          {/* )} */}
         </div>
       </nav>
       {openWorks && <HeaderWorks />}
