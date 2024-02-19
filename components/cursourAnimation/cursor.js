@@ -9,10 +9,10 @@ const Cursor = () => {
   const [cursor, buttonHover] = useContext(CursorContext);
   const [isVisible, setIsVisible] = useState(false);
 
-  // const isTouchDevice =
-  //   "ontouchstart" in window ||
-  //   navigator.MaxTouchPoints > 0 ||
-  //   navigator.msMaxTouchPoints > 0;
+  const isTouchDevice =
+    "ontouchstart" in window ||
+    navigator.MaxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0;
 
   useEffect(() => {
     const handleMouseEnter = () => setIsVisible(true);
@@ -43,12 +43,6 @@ const Cursor = () => {
             }}
             className={styles.cursorBackDrop}
           >
-            {/* <div className={styles.normalCursor}> */}
-            {/* <div className={styles.cursor_top}></div>
-          <div className={styles.cursor_bottom}></div>
-          <div className={styles.cursor_left}></div>
-          <div className={styles.cursor_right}></div> */}
-            {/* </div> */}
           </div>
         )}
       </div>

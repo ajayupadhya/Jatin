@@ -138,6 +138,7 @@ table {
 
 :root {
   --big-font-size: 140px;
+  --project-page-font:100px;
   --medium-font-size: 40px;
   --normal-font-size: 24px;
   --special-thanks: 20px;
@@ -189,6 +190,7 @@ body {
 @media screen and (max-width: 1600px) and (min-width: 1248px) {
   :root {
     --big-font-size: 120px;
+    --project-page-font:100px;
     --medium-font-size: 40px;
     --normal-font-size: 24px;
     --special-thanks: 20px;
@@ -204,6 +206,7 @@ body {
 @media screen and (max-width: 1248px) and (min-width: 900px) {
   :root {
     --big-font-size: 100px;
+    --project-page-font:80px;
     --medium-font-size: 30px;
     --normal-font-size: 16px;
     --special-thanks: 14px;
@@ -219,6 +222,7 @@ body {
 @media screen and (max-width: 900px) and (min-width: 600px) {
   :root {
     --big-font-size: 100px;
+    --project-page-font:60px;
     --medium-font-size: 30px;
     --normal-font-size: 16px;
     --special-thanks: 14px;
@@ -235,6 +239,7 @@ body {
   :root {
     --normal-font-size: 12px;
     --big-font-size: 40px;
+    --project-page-font:40px;
     --medium-font-size: 24px;
     --small-font-size: 14px;
     --smallest-font: 12px;

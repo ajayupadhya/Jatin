@@ -6,9 +6,7 @@ import { raleway_display } from "../../../app/fonts";
 const SingleProject = ({ item, index, all, next }) => {
   return (
     <div key={index} className={style.singleClient}>
-      <div className={style.singleClientImage}>
-        <Image src={item.image} alt={item.image} />
-      </div>
+     
       <div className={style.singleClientText}>
         <div className={style.singleClientTextContainer}>
           <p>
@@ -21,6 +19,9 @@ const SingleProject = ({ item, index, all, next }) => {
           </p>
         </div>
         {next && <Button text={"View Case"} link={item.link} />}
+      </div>
+      <div className={style.singleClientImage}>
+        <Image src={item.image} alt={item.image} />
       </div>
     </div>
   );
