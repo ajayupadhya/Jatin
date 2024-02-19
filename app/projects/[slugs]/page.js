@@ -1,3 +1,4 @@
+"use client";
 import SingleProject from "../../../components/ProjectPage/SingleProject/SingleProject";
 import styles from "./projects.module.css";
 import DubDub from "../../../Images/clients/cover.png";
