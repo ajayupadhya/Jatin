@@ -83,7 +83,7 @@ const Header = () => {
                 Home
               </li>
 
-              <li
+              {/* <li
                 className={logoChange === 2 ? null : styles.hoverOnLink}
                 onClick={() => router.push("/projects")}
                 style={
@@ -95,7 +95,7 @@ const Header = () => {
                 onMouseLeave={() => setButtonHover(false)}
               >
                 Works
-              </li>
+              </li> */}
               <li
                 className={logoChange === 3 ? null : styles.hoverOnLink}
                 onClick={() => handleClickScroll(5, 230, 3)}
@@ -172,7 +172,7 @@ const Header = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     href="/works"
                     className={raleway_display.className}
@@ -188,7 +188,7 @@ const Header = () => {
                   >
                     Works
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     href="/#contact"

@@ -17,6 +17,17 @@
   gap: 20px;
 }
 
+.mainImageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  aspect-ratio: 16/9;
+  max-height: 700px;
+  position: relative;
+}
+
 .overview_container > h2 {
   color: #f0f0f0;
   text-align: center;
@@ -128,6 +139,14 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .content_container{
+    flex-direction: column;
+  }
+
+  .overview_container{
+    
+  }
   .middle__section__container {
     width: 100vw;
     padding: 69px 19px 43px 19px;

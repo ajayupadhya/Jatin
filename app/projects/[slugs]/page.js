@@ -13,7 +13,7 @@ import { raleway_display } from "@/app/fonts";
 import Image from "next/image";
 
 // import Images
-
+import MainImage from "../../../Images/projects/main.png"
 import Challenge1 from "../../../Images/projects/challange1.png";
 import Challenge2 from "../../../Images/projects/challange2.png";
 import Approach1 from "../../../Images/projects/approach.png";
@@ -23,6 +23,7 @@ import Result1 from "../../../Images/projects/results1.png";
 import Result2 from "../../../Images/projects/results2.png";
 import Button from "@/components/common/Button/smallButton";
 import Cursor from "@/components/cursourAnimation/cursor";
+
 
 const data = [
   {
@@ -118,6 +119,9 @@ const Projects = (params) => {
         </div>
 
         <div className={styles.middle__section__container}>
+        <div className={styles.mainImageContainer}>
+              <Image src={MainImage} alt="Main" fill/>
+            </div>
           <div className={styles.middle_single_section}>
             <div className={styles.left_side}>
               <h3>CHALLENGE</h3>

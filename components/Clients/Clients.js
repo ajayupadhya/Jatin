@@ -28,7 +28,7 @@ const data = [
   },
   {
     title: "Baazi Games",
-    client: "DECORASUSA.COM",
+    client: "https://baazigames.com/",
     timeline: "2021",
     role: "BRANDING, UX/UI, DEV",
     image: BaziDesktop,
