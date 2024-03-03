@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: calc(var(--big-font-size));
+    /* gap: calc(var(--big-font-size)); */
     text-decoration: none;
   }
 
